@@ -1,0 +1,19 @@
+{
+  "name": "approve-pull-request-action",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "GitHub Action for approving pull requests",
+  "repository": "juliangruber/approve-pull-request-action",
+  "scripts": {
+    "test": "prettier-standard '**/*.js' ** standard"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0"
+  },
+  "devDependencies": {
+    "prettier-standard": "^15.0.1",
+    "standard": "^14.3.1"
+  }
+}

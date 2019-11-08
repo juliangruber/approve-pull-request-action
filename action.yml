@@ -1,0 +1,16 @@
+name: Approve Pull Request
+author: juliangruber
+description: 'A GitHub Action for approving pull requests'
+branding:
+  icon: 'git-pull-request'
+  color: green
+inputs:
+  github-token:
+    description: 'GitHub Token'
+    required: true
+  number:
+    description: 'Pull Request number'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
