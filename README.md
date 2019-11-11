@@ -12,6 +12,11 @@ steps:
       number: 1
 ```
 
+## Related
+
+- [find-pull-request-action](https://github.com/juliangruber/find-pull-request-action) &mdash; Find a Pull Request
+- [merge-pull-request-action](https://github.com/juliangruber/merge-pull-request-action) &mdash; Merge a Pull Request
+
 ## License
 
 MIT
