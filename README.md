@@ -6,7 +6,8 @@ A GitHub Action for approving pull requests.
 
 ```yaml
 steps:
-  - uses: juliangruber/approve-pull-request-action@master
+  - name: Approve Pull Request
+    uses: juliangruber/approve-pull-request-action@v1
     with:
       github-token: ${{ secrets.GITHUB_TOKEN }}
       number: 1

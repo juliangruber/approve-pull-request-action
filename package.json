@@ -6,13 +6,21 @@
   "description": "GitHub Action for approving pull requests",
   "repository": "juliangruber/approve-pull-request-action",
   "scripts": {
-    "test": "prettier-standard '**/*.js' ** standard"
+    "test": "prettier-standard index.js && standard index.js",
+    "build": "ncc build index.js",
+    "version": "npm run build && git add dist",
+    "release": "np"
+  },
+  "np": {
+    "publish": false
   },
   "dependencies": {
     "@actions/core": "^1.2.0",
     "@actions/github": "^1.1.0"
   },
   "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "np": "^5.1.3",
     "prettier-standard": "^15.0.1",
     "standard": "^14.3.1"
   }
