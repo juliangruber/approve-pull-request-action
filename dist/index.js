@@ -24531,13 +24531,13 @@ const main = async () => {
 
   const pullRequest = context.payload.pull_request;
   if (!pullRequest) {
-    core.warn("Could not get pull request from context, exiting");
+    console.log("Could not get pull request from context, exiting");
     return;
   }
 
   const labels = pullRequest.labels.map(label => label.name);
   if (!labels.includes(approveLabel)) {
-    core.warn("PR does not include approve-label, exiting");
+    console.log("PR does not include approve-label, exiting");
     return;
   }
 
