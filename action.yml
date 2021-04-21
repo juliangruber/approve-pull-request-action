@@ -8,8 +8,8 @@ inputs:
   github-token:
     description: 'GitHub Token'
     required: true
-  number:
-    description: 'Pull Request number'
+  approve-label:
+    description: 'Label to Auto-approve PRs for'
     required: true
 runs:
   using: 'node12'
