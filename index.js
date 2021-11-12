@@ -6,11 +6,19 @@ const { GitHub, context } = require('@actions/github')
 const main = async () => {
   const token = core.getInput('github-token')
   const number = core.getInput('number')
+  const repo = core.getInput('repo')
+
+  var repoValue
+  if (!repo) {
+    repoValue = context.repo
+  } else {
+    repoValue = repo.split('/')
+  }
 
   const octokit = new GitHub(token)
 
   await octokit.pulls.createReview({
-    ...context.repo,
+    ...repoValue,
     pull_number: number,
     event: 'APPROVE'
   })

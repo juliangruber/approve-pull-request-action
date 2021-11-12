@@ -11,6 +11,9 @@ inputs:
   number:
     description: 'Pull Request number'
     required: true
+  repo:
+    description: 'Pull Request repo in owner/repo format'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'
