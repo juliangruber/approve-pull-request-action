@@ -12,7 +12,8 @@ const main = async () => {
   if (!repo) {
     repoValue = context.repo
   } else {
-    repoValue = repo.split('/')
+    const [owner, repo] = repo.split('/')
+    repoValue = {owner, repo}
   }
 
   const octokit = new GitHub(token)
