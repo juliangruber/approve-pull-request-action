@@ -6,20 +6,20 @@ const { GitHub, context } = require('@actions/github')
 const main = async () => {
   const token = core.getInput('github-token')
   const number = core.getInput('number')
-  const repo = core.getInput('repo')
+  const repoString = core.getInput('repo')
 
-  var repoValue
-  if (!repo) {
-    repoValue = context.repo
+  let repoObject
+  if (repoString) {
+    const [owner, repo] = repoString.split('/')
+    repoObject = { owner, repo }
   } else {
-    const [owner, repo] = repo.split('/')
-    repoValue = {owner, repo}
+    repoObject = context.repo
   }
 
   const octokit = new GitHub(token)
 
   await octokit.pulls.createReview({
-    ...repoValue,
+    ...repoObject,
     pull_number: number,
     event: 'APPROVE'
   })
