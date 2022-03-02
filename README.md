@@ -11,6 +11,7 @@ steps:
     with:
       github-token: ${{ secrets.GITHUB_TOKEN }}
       number: 1
+      repo: juliangruber/approve-pull-request-action # optional
 ```
 
 ## Related
