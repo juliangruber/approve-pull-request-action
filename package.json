@@ -10,7 +10,7 @@
     "build": "ncc build index.js",
     "version": "npm run build && git add dist",
     "release": "np",
-    "postversion": "git tag v1"
+    "postversion": "git tag --force v1"
   },
   "np": {
     "publish": false
