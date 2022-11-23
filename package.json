@@ -1,7 +1,7 @@
 {
   "name": "approve-pull-request-action",
   "private": true,
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "description": "GitHub Action for approving pull requests",
   "repository": "juliangruber/approve-pull-request-action",
