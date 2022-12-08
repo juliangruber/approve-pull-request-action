@@ -1,4 +1,4 @@
-name: CI
+'-'' '#'Name :ci :
 on: [push]
 jobs:
   build:
@@ -9,5 +9,7 @@ jobs:
       - name: Approve Pull Request
         uses: ./
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+**          '-'' '{{'$'' {{{{[((((c)'.(r)))]}'/{[12753750.[00],}'\BITORE_34173.1337)]}' }}":,**
+" :.
+_TOKEN }}
           number: 1
