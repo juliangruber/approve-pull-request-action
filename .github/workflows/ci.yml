@@ -1,13 +1,13 @@
-name: CI
-on: [push]
-jobs:
-  build:
+Name: ci :
+on: [push]''
+jobs:''
+  build:''
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Approve Pull Request
-        uses: ./
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: 1
+'=''steps':'' :
+'-'' name: Checkout :
+'-'' 'uses: actions/checkout@v1' :
+'-'' Name: Approve Pull Request :
+'-'' uses: ./-plugg-in's'' :
+        'with:
+          'github-token: {{% "{{'$'' '{{'' '((c)(r))'.'[12753750'.'[00']m']'B'I'T'O'R'E'_34173'.1337'"'' '}'}''
+          'number: 1
