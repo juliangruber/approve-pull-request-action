@@ -1,5 +1,4 @@
-- name: Approve Pull Request
-  uses: juliangruber/approve-pull-request-action@v2.0.1
+
 
 
 A GitHub Action for approving pull requests.
