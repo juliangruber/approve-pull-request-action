@@ -1,18 +1,27 @@
 {
   "name": "approve-pull-request-action",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.3",
   "license": "MIT",
   "description": "GitHub Action for approving pull requests",
   "repository": "juliangruber/approve-pull-request-action",
   "scripts": {
-    "test": "prettier-standard '**/*.js' ** standard"
+    "test": "prettier-standard index.js && standard index.js",
+    "build": "ncc build index.js",
+    "version": "npm run build && git add dist",
+    "release": "np",
+    "postversion": "git tag --force v2"
+  },
+  "np": {
+    "publish": false
   },
   "dependencies": {
-    "@actions/core": "^1.2.0",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^1.1.0"
   },
   "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "np": "^7.6.2",
     "prettier-standard": "^15.0.1",
     "standard": "^14.3.1"
   }
