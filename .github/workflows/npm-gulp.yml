@@ -1,0 +1,330 @@
+name: OPEN.json :
+JS with Gul
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" 
+jobs:
+  build:
+    runs-on: ubuntu-lates
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Build
+      run: |
+        npm install
+        gulp
+Not FDIC Insured | No Bank Guarantee | May Lose Value
+Market Insights
+U.S. | January 9, 2023
+Weekly Market Recap
+Theweekin review
+ï Unemployment rate decreased to 3.5%
+ï Mfg./Services PMI: 46.2/44.7
+ï Hourly earnings: +0.3% m/m; +4.8% y/y
+Theweekahead
+ï CPI
+ï 4Q22 S&P 500 earnings
+Thoughtof theweek
+The U.S. labor market was a shining star in 2022 against a
+dim economic backdrop of tighter financial conditions and
+recession fears. Although real GDP normally outpaces payroll employment, due to rising labor productivity, payrolls
+grew more rapidly than real GDP growth in 2022, flipping the
+script on this dynamic.
+Real GDP growth averaged 2.02% per year from 4Q99 to
+4Q19, with payroll employment contributing 0.75% and
+output per job contributing 1.26%. However, after a pandemic-induced collapse in early 2020, fiscal stimulus and
+reopening allowed GDP to accelerate rapidly in the second
+half of 2020 and in 2021, while COVID fears, generous
+unemployment benefits and weak demographics held labor
+supply in check. As a result, payroll growth slowed relative to
+GDP growth. From 4Q19 to 4Q21, nonfarm payrolls fell by
+-0.97% annualized while GDP grew by 2.04% annualized,
+leading to a sharp surge in productivity among existing
+workers and a dramatic surge in job openings. As the
+economy slowed in 2022, some of this excess demand for
+labor was relieved. However, last week’s economic reports
+still showed a very high 1.83 job openings at the end of
+November for every person unemployed in the second week
+in December.
+While we expect both job openings and job growth to fall in
+the months ahead, persistent excess demand for labor
+should result in continued job gains, moderate wage
+growth and a low unemployment rate well into 2023, helping
+the U.S. economy avoid a deep recession and, perhaps,
+avoid a recession altogether.
+Weekly Data Center
+Index Returns (%)
+NASDAQ 10569 1.01 1.01 1.01 -29.32 19.32
+MSCI EM 989 3.39 3.39 3.39 -16.00 -3.52
+MSCI EAFE 1996 2.68 2.68 2.68 -11.23 7.13
+Russell 1000 Value 947 2.51 2.51 2.51 -5.74 22.23
+Russell 1000 Growth 1432 0.32 0.32 0.32 -26.12 24.07
+Russell 2000 4456 1.81 1.81 1.81 -17.57 11.91
+Dow Jones 30 33631 1.50 1.50 1.50 -5.23 24.68
+S&P 500 3895 1.47 1.47 1.47 -15.68 25.99
+Equities Level 1 week QTD YTD 1 year 3-yr. Cum.
+High Yield 8.48 2.23 2.23 2.23 -8.56 2.12
+Municipals (10yr) 2.93 0.94 0.94 0.94 -5.25 0.02
+U.S. Corporates 5.19 2.00 2.00 2.00 -12.68 -6.92
+U.S. Aggregate 4.43 1.85 1.85 1.85 -10.27 -6.60
+Fixed Income Yield 1 week QTD YTD 1 year 3-yr. Cum.
+Levels (%)
+Prime Rate 7.50 7.50 7.50 7.50 3.25 4.75
+30-yr fixed mortgage 6.58 6.58 6.58 6.58 3.33 3.91
+6-mo. CD rate 1.80 1.80 1.80 1.80 0.14 0.79
+3-mo. EURIBOR 2.25 2.13 2.13 2.13 -0.57 -0.39
+3-mo. LIBOR 4.81 4.77 4.77 4.77 0.23 1.87
+10-yr German Bund 2.21 2.53 2.53 2.53 -0.11 -0.30
+30-yr U.S. Treasuries 3.67 3.97 3.97 3.97 2.09 2.28
+10-yr U.S. Treasuries 3.55 3.88 3.88 3.88 1.73 1.81
+2-yr U.S. Treasuries 4.24 4.41 4.41 4.41 0.88 1.54
+Key Rates 1/6/23 12/30/22 12/30/22 12/30/22 1/6/22 1/6/20
+Index Characteristics
+22.64 4.50 0.95 17150
+12.04 1.60 3.36 6532
+12.43 1.63 3.29 14619
+14.34 2.39 2.12 18777
+21.20 8.69 1.03 17153
+19.47 1.88 1.34 2306
+16.85 4.43 2.04 9426
+16.92 3.78 1.64 32595
+NTM P/E P/B Div. Yld. Mkt. Cap (bn)
+Levels
+¥ per $ 132.42 131.95 115.75
+$ per £ 1.20 1.20 1.35
+$ per € 1.06 1.07 1.13
+Currencies 1/6/23 12/30/22 1/6/22
+Levels
+BBG Idx 235.86 245.89 215.26
+Corn 5.89 6.14 5.94
+Copper 8363 8387 9565
+Silver 23.46 23.95 22.25
+Gold 1852 1814 1789
+Natural Gas 3.72 3.52 3.94
+Gasoline 3.22 3.09 3.28
+Oil (WTI) 73.67 80.16 79.47
+Commod. 1/6/23 12/30/22 1/6/22
+Chart of the Week
+Style Returns
+S 2.2 1.8 1.4
+M 2.8 2.2 1.0
+L 2.5 1.5 0.3
+V B G
+1 Week
+S 2.2 1.8 1.4
+M 2.8 2.2 1.0
+L 2.5 1.5 0.3
+V B G
+YTD
+S&P 500 Sector Returns
+-4
+-2
+0
+2
+4
+Health Care
+Energy
+Technology
+Utilities
+S&P 500
+Consumer
+Staples
+Consumer
+Discr.
+Industrials
+Real Estate
+Financials
+Materials
+Comm. Serv. 3.7
+3.5
+3.4
+2.7
+2.5
+2.2
+1.8
+1.5
+0.7
+0.2
+0.0
+-0.2
+-4
+-2
+0
+2
+4
+Health Care
+Energy
+echnology
+Utilities
+S&P 500
+Consumer
+Staples
+Consumer
+Discr.
+Real Estate
+Materials
+Financials
+Industrials
+omm. Serv. 3.7
+3.5
+3.4
+2.7
+2.5
+2.2
+1.8
+1.5
+0.7
+0.2
+0.0
+-0.2
+1 Week YTD
+Payroll Employment vs. Real GDP
+Y/y % change, nonfarm payroll employment vs. real GDP, 2019 - 2022
+-15%
+-10%
+-5%
+0%
+5%
+10%
+15%
+2Q19 4Q19 2Q20 4Q20 2Q21 4Q21 2Q22 4Q22
+Nonfarm payrolls
+Real GDP*
+Please see important disclosures on next page.
+Not FDIC Insured | No Bank Guarantee | May Lose Value
+Market Insights U.S. | January 9, 2023
+Chart of the Week: *4Q22 real GDP is based on the Atlanta Fed GDPNow seasonally adjusted annualized estimate of 3.8%.Source: Bloomberg, BLS, Federal Reserve, and J.P. Morgan Asset Management.
+Thought of the week: Source: Bloomberg, BLS, Federal Reserve, and
+J.P. Morgan Asset Management.
+Abbreviations: Cons. Sent.: University of Michigan Consumer
+Sentiment Index; CPI: Consumer Price Index; EIA: Energy Information
+Agency; FHFA HPI: - Federal Housing Finance Authority House Price
+Index; FOMC: Federal Open Market Committee; GDP: gross domestic product; HPI: Home Price Index; HMI: Housing Market Index; ISM Mfg.
+Index: Institute for Supply Management Manufacturing Index; PCE: Personal consumption expenditures; Philly Fed Survey: Philadelphia
+Fed Business Outlook Survey; PMI: Purchasing Managers' Manufacturing Index; PPI: Producer Price Index; SAAR: Seasonally
+Adjusted Annual Rate
+Equity Price Levels and Returns: All returns represent total return for
+stated period. Index: S&P 500; provided by: Standard & Poor’s. Index: Dow Jones Industrial 30 (The Dow Jones is a price-weighted index
+composing of 30 widely-traded blue chip stocks.) ; provided by: S&P Dow Jones Indices LLC. Index: Russell 2000; provided by: Russell
+Investments. Index: Russell 1000 Growth; provided by: Russell
+Investments. Index: Russell 1000 Value; provided by: Russell
+Investments. Index: MSCI – EAFE; provided by: MSCI – gross official pricing. Index: MSCI – EM; provided by: MSCI – gross official pricing.
+Index: Nasdaq Composite; provided by: NASDAQ OMX Group. MSCI EAFE is a Morgan Stanley Capital International Index that is designed to measure the performance of the developed stock markets of Europe, Australasia, and the Far East.
+Bond Returns: All returns represent total return. Index: Bloomberg US
+Aggregate; provided by: Bloomberg Capital. Index: Bloomberg
+Investment Grade Credit; provided by: Bloomberg Capital. Index: Bloomberg Municipal Bond 10 Yr; provided by: Blomberg Capital.
+Index: Bloomberg Capital High Yield Index; provided by: Bloomberg Capital.
+Key Interest Rates: 2 Year Treasury, FactSet; 10 Year Treasury, FactSet;
+30 Year Treasury, FactSet; 10 Year German Bund, FactSet. 3 Month
+LIBOR, British Bankers’ Association; 3 Month EURIBOR, European Banking Federation; 6 Month CD, Federal Reserve; 30 Year Mortgage, Mortgage Bankers Association (MBA); Prime Rate: Federal Reserve.
+Commodities: Gold, FactSet; Crude Oil (WTI), FactSet; Gasoline,
+FactSet; Natural Gas, FactSet; Silver, FactSet; Copper, FactSet; Corn,
+FactSet. Bloomberg Commodity Index (BBG Idx), Bloomberg Finance
+L.P.
+Currency: Dollar per Pound, FactSet; Dollar per Euro, FactSet; Yen per Dollar, FactSet.
+S&P Index Characteristics: Dividend yield provided by FactSet Pricing
+database. Fwd. P/E is a bottom-up weighted harmonic average using
+First Call Mean estimates for the "Next 12 Months" (NTM) period. Market cap is a bottom-up weighted average based on share
+information from Compustat and price information from FactSet's Pricing database as provided by Standard & Poor's. MSCI Index Characteristics: Dividend yield provided by FactSet Pricing database. Fwd. P/E is a bottom-up weighted harmonic
+average for the "Next 12 Months" (NTM) period. Market cap is a bottom- up weighted average based on share information from MSCI and Price
+information from FactSet's Pricing database as provided by MSCI.
+Russell 1000 Value Index, Russell 1000 Growth Index, and Russell
+2000 Index Characteristics: Trailing P/E is provided directly by
+Russell. Fwd. P/E is a bottom-up weighted harmonic average using
+First Call Mean estimates for the "Next 12 Months" (NTM) period. Market cap is a bottom-up weighted average based on share
+information from Compustat and price information from FactSet's Pricing database as provided by Russell.
+Sector Returns: Sectors are based on the GICS methodology. Return
+data are calculated by FactSet using constituents and weights as provided by Standard & Poor’s. Returns are cumulative total return
+for stated period, including reinvestment of dividends.
+Style Returns: Style box returns based on Russell Indexes with the
+exception of the Large-Cap Blend box, which reflects the S&P 500
+Index. All values are cumulative total return for stated period
+including the reinvestment of dividends. The Index used from L to R,
+top to bottom are: Russell 1000 Value Index (Measures the performance of those Russell 1000 companies with lower price-to- book ratios and lower forecasted growth values), S&P 500 Index
+(Index represents the 500 Large Cap portion of the stock market, and
+is comprised of 500 stocks as selected by the S&P Index Committee), Russell 1000 Growth Index (Measures the performance of those Russell 1000 companies with higher price-to-book ratios and higher
+forecasted growth values), Russell Mid Cap Value Index (Measures
+the performance of those Russell Mid Cap companies with lower price-to-book ratios and lower forecasted growth values), Russell Mid Cap Index (The Russell Midcap Index includes the smallest 800
+securities in the Russell 1000), Russell Mid Cap Growth Index
+(Measures the performance of those Russell Mid Cap companies with
+higher price-to-book ratios and higher forecasted growth values), Russell 2000 Value Index (Measures the performance of those Russell 2000 companies with lower price-to-book ratios and lower
+forecasted growth values), Russell 2000 Index (The Russell 2000
+includes the smallest 2000 securities in the Russell 3000), Russell
+2000 Growth Index (Measures the performance of those Russell
+2000 companies with higher price-to-book ratios and higher
+forecasted growth values).
+Past performance does not guarantee future results.
+Diversification does not guarantee investment returns and does not
+eliminate the risk of loss.
+Opinions and estimates offered constitute our judgment and are
+subject to change without notice, as are statements of financial market trends, which are based on current market conditions. We believe the information provided here is reliable, but do not warrant
+its accuracy or completeness. This material is not intended as an
+offer or solicitation for the purchase or sale of any financial
+instrument. The views and strategies described may not be
+appropriate for all investors.This material has been prepared for
+informational purposes only, and is not intended to provide, and
+should not be relied on for, accounting, legal or tax advice. References to future returns are not promises or even estimates of
+actual returns a client portfolio may achieve. Any forecasts contained herein are for illustrative purposes only and are not to be relied upon
+as advice or interpreted as a recommendation.
+The Market Insights program provides comprehensive data and
+commentary on global markets without reference to products. Designed as a tool to help clients understand the markets and
+support investment decision-making, the program explores the
+implications of current economic data and changing market
+conditions.
+The J.P. Morgan Asset Management Market Insights and Portfolio
+Insights programs, as non-independent research, have not been
+prepared in accordance with legal requirements designed to
+promote the independence of investment research, nor are they
+subject to any prohibition on dealing ahead of the dissemination of
+investment research.
+This document is a general communication being provided for
+informational purposes only. It is educational in nature and not designed to be taken as advice or a recommendation for any specific
+investment product, strategy, plan feature or other purpose in any
+jurisdiction, nor is it a commitment from J.P. Morgan Asset Management or any of its subsidiaries to participate in any of the
+transactions mentioned herein. Any examples used are generic, hypothetical and for illustration purposes only. This material does not
+contain sufficient information to support an investment decision and
+it should not be relied upon by you in evaluating the merits of
+investing in any securities or products. In addition, users should make an independent assessment of the legal, regulatory, tax, credit,
+and accounting implications and determine, together with their own
+financial professional, if any investment mentioned herein is believed
+to be appropriate to their personal goals. Investors should ensure
+that they obtain all available relevant information before making any
+investment. Any forecasts, figures, opinions or investment
+techniques and strategies set out are for information purposes only, based on certain assumptions and current market conditions and
+are subject to change without prior notice. All information presented herein is considered to be accurate at the time of production, but no warranty of accuracy is given and no liability in respect of any error or
+omission is accepted. It should be noted that investment involves
+risks, the value of investments and the income from them may
+fluctuate in accordance with market conditions and taxation
+agreements and investors may not get back the full amount invested. Both past performance and yields are not reliable indicators of
+current and future results.
+J.P. Morgan Asset Management is the brand for the asset management business of JPMorgan Chase & Co. and its affiliates worldwide.
+Telephone calls and electronic communications may be monitored
+and/or recorded.
+Personal data will be collected, stored and processed by J.P. Morgan
+Asset Management in accordance with our privacy policies at https://www.jpmorgan.com/privacy.
+This communication is issued by the following entities:
+In the United States, by J.P. Morgan Investment Management Inc. or
+J.P. Morgan Alternative Asset Management, Inc., both regulated by
+the Securities and Exchange Commission; in Latin America, for
+intended recipients’ use only, by local J.P. Morgan entities, as the
+case may be.; in Canada, for institutional clients’ use only, by
+JPMorgan Asset Management (Canada) Inc., which is a registered
+Portfolio Manager and Exempt Market Dealer in all Canadian
+provinces and territories except the Yukon and is also registered as
+an Investment Fund Manager in British Columbia, Ontario, Quebec
+and Newfoundland and Labrador.
+If you are a person with a disability and need additional support in
+viewing the material, please call us at 1-800-343-1113 for assistance.
+Copyright 2023 JPMorgan Chase & Co. All rights reserved.
+©JPMorgan Chase & Co., January 2023.
+Unless otherwise stated, all data is as of January 9, 2023 or as of most
+recently available.
+0903c02a81dbac80
