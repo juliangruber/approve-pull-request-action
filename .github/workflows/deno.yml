@@ -10,6 +10,72 @@ name: Deno
 
 
 
+**THIS PAGE SHOULD BE FILLED OUT BY YOUR BANKER OR BESIDE YOUR BANKER
+
+
+Company Name: UNITED STATES 
+
+Relationship Manager: VANESSA COUNTRYMAN
+
+Treasury Management Officer: ZACHRY TYLER WOOD
+
+
+Please link your flow of funds:
+
+
+BELOW FOR BANK TEAM TO FILL OUT:
+
+
+What kind of account(s) does [Company Name] have? 
+
+To ensure the customer has the right account(s) enabled in order to implement with Modern Treasury
+
+Corporate is the ONLY account type capable of working with Modern Treasury.
+
+
+What type of account(s) does the customer have with JPMC? 
+
+Commercial
+
+Not Commercial? Will need the customer's account moved to Commercial.
+
+
+Product Enablement for Modern Treasury Connectivity : Let’s make sure the account(s) is/are ready to implement with Modern Treasury.
+
+ACCESS must be enabled in order to integrate with Modern Treasury.
+
+Does the customer have the correct product enabled for their account(s)?: Yes/No (Please Circle)
+
+Yes 
+
+No, Please enable ACCESS for the necessary account(s). 
+
+
+What payment rails are enabled for [Company Name] accounts?
+
+Let’s ensure the customer has the correct payment rails enabled for their business flow of funds. 
+
+[Example] Account Number : (check off what is needed only)
+
+ACH
+
+USD Wires
+
+Non-USD Wires
+
+Lockbox
+
+Check-Print
+
+Reporting [Enablement required for all accounts]
+
+Account Reconciliation : Previous/Intra-day BAI2
+
+Balance Files
+
+Incoming ACH
+
+
 
 
 
