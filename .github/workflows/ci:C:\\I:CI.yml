@@ -1,0 +1,508 @@
+name: NodeJS with Gulp
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "Master" ]
+jobs:
+  build:
+    #::Run ::On ::Runs-on :'Run'@
+@@ -0,0 +1,243 @@
+"'Name:'#'Run''
+'Runs::/build_script OPEN'.JS '- 'with ': 'Gulp'.xml :":,
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrx.node-version }}
+    - name: Build and Deploy :title :
+    title :bitcoin'
+'Run''
+'Runs :|
+'#installing..., :This:Products :#                   This Product Contains Sensitive Taxpayer Data                                                                          Request Date: 07-29-2022                                                       Response Date: 07-29-2022                                                   Tracking Number: 102393399156                                                 Customer File Number: 132624428                            Wage and Income Transcript                                                                                 SSN Provided:  XXX-XX-1725                                           Tax Period Requested:  December, 2020                             Form W-2 Wage and Tax Statement                           Employer:   Employer Identification Number (EIN):XXXXX4661   INTU   2700 C   Employee:   Employee's Social Security Number:XXX-XX-1725   ZACH T WOO   5222 B   Submission Type:.............................................Original document  Wages, Tips and Other Compensation:..............................$5,105,000.00  Federal Income Tax Withheld:.....................................$1,888,138.00  Social Security Wages:.............................................$137,700.00  Social Security Tax Withheld:........................................$8,537.00  Medicare Wages and Tips:.........................................$5,105,000.00  Medicare Tax Withheld:.............................................$118,167.00  Social Security Tips:....................................................$0.00  Allocated Tips:..........................................................$0.00  Dependent Care Benefits:.................................................$0.00  Deferred Compensation:...................................................$0.00  Code "Q" Nontaxable Combat Pay:..........................................$0.00  Code "W" Employer Contributions to a Health Savings Account:.............$0.00  Code "Y" Deferrals under a section 409A nonqualified Deferred Compensation  plan:....................................................................$0.00  Code "Z" Income under section 409A on a nonqualified Deferred Compensation  plan:....................................................................$0.00  Code "R" Employer's Contribution to MSA:.................................$0.00  Code "S" Employer's Contribution to Simple Account:......................$0.00  Code "T" Expenses Incurred for Qualified Adoptions:......................$0.00  Code "V" Income from exercise of non-statutory stock options:............$0.00  Code "AA" Designated Roth Contributions under a Section 401(k) Plan:.....$0.00  Code "BB" Designated Roth Contributions under a Section 403(b) Plan:.....$0.00  Code "DD" Cost of Employer-Sponsored Health Coverage:....................$0.00  Code "EE" Designated ROTH Contributions Under a Governmental Section 457(b)  Plan:....................................................................$0.00  Code "FF" Permitted benefits under a qualified small employer health  reimbursement arrangement:...............................................$0.00  Code "GG" Income from Qualified Equity Grants Under Section 83(i):.......$0.00  Code "HH" Aggregate Deferrals Under Section 83(i) Elections as of the Close  of the Calendar Year:....................................................$0.00  Third Party Sick Pay Indicator:.....................................Unanswered  Retirement Plan Indicator:..........................................Unanswered  Statutory Employee:.....................................Not Statutory Employee  W2 Submission Type:...................................................Original  W2 WHC SSN Validation Code:........................................Correct SSN                                       Form 1099-G                                     Payer:   Payer's Federal Identification Number (FIN):XXXXX4775   THE   101 EA   Recipient:   Recipient's Identification Number:XXX-XX-1725   WOO ZACH T   5222 B  Submission Type:.............................................Original document  Account Number (Optional):....................................................  ATAA Payments:...........................................................$0.00  Tax Withheld:........................................................$1,026.00  Taxable Grants:..........................................................$0.00  Unemployment Compensation:..........................................$10,182.00  Agricultural Subsidies:..................................................$0.00  Prior Year Refund:.......................................................$0.00  Market gain on Commodity Credit Corporation loans repaid:................$0.00  Year of Refund:........................................................Not Set  1099G Offset:..............Not Refund, Credit, or Offset for Trade or Business  Second TIN Notice:............................................................                     This Product Contains Sensitive Taxpayer Data ":"This Product Contains Sensitive Taxpayer Data                                                                          Request Date: 07-29-2022                                                       Response Date: 07-29-2022                                                   Tracking Number: 102393315497                                                Customer File Number: 9999999999                               Tax Return Transcript                                                                                     SSN Provided: XXX-XX-1725                                               Tax Period Ending:  Dec. 31, 2019   The following items reflect the amount as shown on the return (PR), and  the amount as adjusted (PC), if applicable.  They do not show subsequent  activity on the account.                                                                 SSN:  XXX-XX-1725                                                        SPOUSE SSN:              NAME(S) SHOWN ON RETURN: ZACH T WOO                            ADDRESS: 3050 R              FILING STATUS:                                                          Single  FORM NUMBER:                                                              1040  CYCLE POSTED:                                                         20202105  RECEIVED DATE:                                                    May 18, 2020  REMITTANCE:                                                              $0.00  EXEMPTION NUMBER:                                                            1  DEPENDENT 1 NAME CTRL:                                                         DEPENDENT 1 SSN:                                                               DEPENDENT 2 NAME CTRL:                                                         DEPENDENT 2 SSN:                                                               DEPENDENT 3 NAME CTRL:                                                         DEPENDENT 3 SSN:                                                               DEPENDENT 4 NAME CTRL:                                                         DEPENDENT 4 SSN:                                                               PTIN:                                                                          PREPARER EIN:                                                                   Income   WAGES, SALARIES, TIPS, ETC:..............................................$0.00  TAXABLE INTEREST INCOME: SCH B:..........................................$1.00  TAX-EXEMPT INTEREST:.....................................................$0.00  ORDINARY DIVIDEND INCOME: SCH B:.........................................$0.00  QUALIFIED DIVIDENDS:.....................................................$0.00  REFUNDS OF STATE/LOCAL TAXES:............................................$0.00  ALIMONY RECEIVED:........................................................$0.00  BUSINESS INCOME OR LOSS (Schedule C):....................................$0.00  BUSINESS INCOME OR LOSS: SCH C PER COMPUTER:.............................$0.00  CAPITAL GAIN OR LOSS: (Schedule D):......................................$0.00  CAPITAL GAINS OR LOSS: SCH D PER COMPUTER:...............................$0.00  OTHER GAINS OR LOSSES (Form 4797):.......................................$0.00  TOTAL IRA DISTRIBUTIONS:.................................................$0.00  TAXABLE IRA DISTRIBUTIONS:...............................................$0.00  TOTAL PENSIONS AND ANNUITIES:............................................$0.00  TAXABLE PENSION/ANNUITY AMOUNT:..........................................$0.00  ADDITIONAL INCOME:.......................................................$0.00  ADDITIONAL INCOME PER COMPUTER:..........................................$0.00  REFUNDABLE CREDITS PER COMPUTER:.........................................$0.00  REFUNDABLE EDUCATION CREDIT PER COMPUTER:................................$0.00  QUALIFIED BUSINESS INCOME DEDUCTION:.....................................$0.00  RENT/ROYALTY/PARTNERSHIP/ESTATE (Schedule E):............................$0.00  RENT/ROYALTY/PARTNERSHIP/ESTATE (Schedule E) PER COMPUTER:...............$0.00  RENT/ROYALTY INCOME/LOSS PER COMPUTER:...................................$0.00  ESTATE/TRUST INCOME/LOSS PER COMPUTER:...................................$0.00  PARTNERSHIP/S-CORP INCOME/LOSS PER COMPUTER:.............................$0.00  FARM INCOME OR LOSS (Schedule F):........................................$0.00  FARM INCOME OR LOSS (Schedule F) PER COMPUTER:...........................$0.00  UNEMPLOYMENT COMPENSATION:...............................................$0.00  TOTAL SOCIAL SECURITY BENEFITS:..........................................$0.00  TAXABLE SOCIAL SECURITY BENEFITS:........................................$0.00  TAXABLE SOCIAL SECURITY BENEFITS PER COMPUTER:...........................$0.00  OTHER INCOME:............................................................$0.00  SCHEDULE EIC SE INCOME PER COMPUTER:.....................................$0.00  SCHEDULE EIC EARNED INCOME PER COMPUTER:.................................$0.00  SCH EIC DISQUALIFIED INC COMPUTER:.......................................$1.00  QUALIFIED BUSINESS INCOME DEDUCTION:.....................................$0.00  F8995 QUALIFIED BUSINESS INCOME DEDUCTION COMPUTER:......................$0.00  F8995 NET CAPITAL GAINS COMPUTER:........................................$0.00TOTAL INCOME:............................................................$1.00  TOTAL INCOME PER COMPUTER:...............................................$1.00   Adjustments to Income   EDUCATOR EXPENSES:.......................................................$0.00  EDUCATOR EXPENSES PER COMPUTER:..........................................$0.00  RESERVIST AND OTHER BUSINESS EXPENSE:....................................$0.00  HEALTH SAVINGS ACCT DEDUCTION:...........................................$0.00  HEALTH SAVINGS ACCT DEDUCTION PER COMPTR:................................$0.00  MOVING EXPENSES: F3903:..................................................$0.00  SELF EMPLOYMENT TAX DEDUCTION:...........................................$0.00  SELF EMPLOYMENT TAX DEDUCTION PER COMPUTER:..............................$0.00  SELF EMPLOYMENT TAX DEDUCTION VERIFIED:..................................$0.00  KEOGH/SEP CONTRIBUTION DEDUCTION:........................................$0.00  SELF-EMP HEALTH INS DEDUCTION:...........................................$0.00  EARLY WITHDRAWAL OF SAVINGS PENALTY:.....................................$0.00  ALIMONY PAID SSN:.............................................................  ALIMONY PAID:............................................................$0.00  IRA DEDUCTION:...........................................................$0.00  IRA DEDUCTION PER COMPUTER:..............................................$0.00  STUDENT LOAN INTEREST DEDUCTION:.........................................$0.00  STUDENT LOAN INTEREST DEDUCTION PER COMPUTER:............................$0.00  STUDENT LOAN INTEREST DEDUCTION VERIFIED:................................$0.00  TUITION AND FEES DEDUCTION:..............................................$0.00  TUITION AND FEES DEDUCTION PER COMPUTER:.................................$0.00  DOMESTIC PRODUCTION ACTIVITIES DEDUCTION:................................$0.00  DOMESTIC PRODUCTION ACTIVITIES DEDUCTION PER COMPUTER:...................$0.00  OTHER ADJUSTMENTS:.......................................................$0.00  ARCHER MSA DEDUCTION:....................................................$0.00  ARCHER MSA DEDUCTION PER COMPUTER:.......................................$0.00  TOTAL ADJUSTMENTS:.......................................................$0.00  TOTAL ADJUSTMENTS PER COMPUTER:..........................................$0.00  ADJUSTED GROSS INCOME:...................................................$1.00  ADJUSTED GROSS INCOME PER COMPUTER:......................................$1.00   Tax and Credits   65-OR-OVER:.................................................................NO  BLIND:......................................................................NO  SPOUSE 65-OR-OVER:..........................................................NO  SPOUSE BLIND:...............................................................NO  STANDARD DEDUCTION PER COMPUTER:....................................$12,200.00  ADDITIONAL STANDARD DEDUCTION PER COMPUTER:..............................$0.00  TAX TABLE INCOME PER COMPUTER:...........................................$0.00  EXEMPTION AMOUNT PER COMPUTER:...........................................$0.00  TAXABLE INCOME:..........................................................$0.00  TAXABLE INCOME PER COMPUTER:.............................................$0.00  TOTAL POSITIVE INCOME PER COMPUTER:......................................$1.00  TENTATIVE TAX:...........................................................$0.00  TENTATIVE TAX PER COMPUTER:..............................................$0.00  FORM 8814 ADDITIONAL TAX AMOUNT:.........................................$0.00  TAX ON INCOME LESS SOC SEC INCOME PER COMPUTER:..........................$0.00  FORM 6251 ALTERNATIVE MINIMUM TAX:.......................................$0.00  FORM 6251 ALTERNATIVE MINIMUM TAX PER COMPUTER:..........................$0.00  FOREIGN TAX CREDIT:......................................................$0.00  FOREIGN TAX CREDIT PER COMPUTER:.........................................$0.00  FOREIGN INCOME EXCLUSION PER COMPUTER:...................................$0.00  FOREIGN INCOME EXCLUSION TAX PER COMPUTER:...............................$0.00  EXCESS ADVANCE PREMIUM TAX CREDIT REPAYMENT AMOUNT:......................$0.00  EXCESS ADVANCE PREMIUM TAX CREDIT REPAYMENT VERIFIED AMOUNT:.............$0.00  CHILD & DEPENDENT CARE CREDIT:...........................................$0.00  CHILD & DEPENDENT CARE CREDIT PER COMPUTER:..............................$0.00  CREDIT FOR ELDERLY AND DISABLED:.........................................$0.00  CREDIT FOR ELDERLY AND DISABLED PER COMPUTER:............................$0.00  EDUCATION CREDIT:........................................................$0.00  EDUCATION CREDIT PER COMPUTER:...........................................$0.00  GROSS EDUCATION CREDIT PER COMPUTER:.....................................$0.00  RETIREMENT SAVINGS CNTRB CREDIT:.........................................$0.00  RETIREMENT SAVINGS CNTRB CREDIT PER COMPUTER:............................$0.00  PRIM RET SAV CNTRB: F8880 LN6A:..........................................$0.00  SEC RET SAV CNTRB: F8880 LN6B:...........................................$0.00  TOTAL RETIREMENT SAVINGS CONTRIBUTION: F8880 CMPTR:......................$0.00  RESIDENTIAL ENERGY CREDIT:...............................................$0.00  RESIDENTIAL ENERGY CREDIT PER COMPUTER:..................................$0.00  CHILD AND OTHER DEPENDENT CREDIT:........................................$0.00  CHILD AND OTHER DEPENDENT CREDIT PER COMPUTER:...........................$0.00  ADOPTION CREDIT: F8839:..................................................$0.00  ADOPTION CREDIT PER COMPUTER:............................................$0.00  FORM 8396 MORTGAGE CERTIFICATE CREDIT:...................................$0.00  FORM 8396 MORTGAGE CERTIFICATE CREDIT PER COMPUTER:......................$0.00  F3800, F8801 AND OTHER CREDIT AMOUNT:....................................$0.00  FORM 3800 GENERAL BUSINESS CREDITS:......................................$0.00  FORM 3800 GENERAL BUSINESS CREDITS PER COMPUTER:.........................$0.00  PRIOR YR MIN TAX CREDIT: F8801:..........................................$0.00  PRIOR YR MIN TAX CREDIT: F8801 PER COMPUTER:.............................$0.00  F8936 ELECTRIC MOTOR VEHICLE CREDIT AMOUNT:..............................$0.00  F8936 ELECTRIC MOTOR VEHICLE CREDIT PER COMPUTER:........................$0.00  F8910 ALTERNATIVE MOTOR VEHICLE CREDIT AMOUNT:...........................$0.00  F8910 ALTERNATIVE MOTOR VEHICLE CREDIT PER COMPUTER:.....................$0.00  OTHER CREDITS:...........................................................$0.00 TOTAL CREDITS:...........................................................$0.00  TOTAL CREDITS PER COMPUTER:..............................................$0.00  INCOME TAX AFTER CREDITS PER COMPUTER:...................................$0.00   Other Taxes   SE TAX:..................................................................$0.00  SE TAX PER COMPUTER:.....................................................$0.00  SOCIAL SECURITY AND MEDICARE TAX ON UNREPORTED TIPS:.....................$0.00  SOCIAL SECURITY AND MEDICARE TAX ON UNREPORTED TIPS PER COMPUTER:........$0.00  TAX ON QUALIFIED PLANS F5329 (PR):.......................................$0.00  TAX ON QUALIFIED PLANS F5329 PER COMPUTER:...............................$0.00  IRAF TAX PER COMPUTER:...................................................$0.00  TP TAX FIGURES (REDUCED BY IRAF) PER COMPUTER:...........................$0.00  IMF TOTAL TAX (REDUCED BY IRAF) PER COMPUTER:............................$0.00  TOTAL OTHER TAXES PER COMPUTER:..........................................$0.00  UNPAID FICA ON REPORTED TIPS:............................................$0.00  F8959-8960 OTHER TAXES:..................................................$0.00  TOTAL OTHER TAXES:.......................................................$0.00  RECAPTURE TAX: F8611:....................................................$0.00  HOUSEHOLD EMPLOYMENT TAXES:..............................................$0.00  HOUSEHOLD EMPLOYMENT TAXES PER COMPUTER:.................................$0.00  FORM 6252 TAX:...........................................................$0.00  HEALTH CARE RESPONSIBILITY PENALTY:......................................$0.00  HEALTH CARE RESPONSIBILITY PENALTY VERIFIED:.............................$0.00  HEALTH COVERAGE RECAPTURE: F8885:........................................$0.00  RECAPTURE TAXES:.........................................................$0.00  TOTAL ASSESSMENT PER COMPUTER:...........................................$0.00  TOTAL TAX LIABILITY TP FIGURES:..........................................$0.00  TOTAL TAX LIABILITY TP FIGURES PER COMPUTER:.............................$0.00   Payments   FEDERAL INCOME TAX WITHHELD:.............................................$0.00  HEALTH CARE: INDIVIDUAL RESPONSIBILITY:..................................$0.00  HEALTH CARE FULL-YEAR COVERAGE INDICATOR:....................................0  ESTIMATED TAX PAYMENTS:..................................................$0.00  OTHER PAYMENT CREDIT:....................................................$0.00  REFUNDABLE EDUCATION CREDIT:.............................................$0.00  REFUNDABLE EDUCATION CREDIT PER COMPUTER:................................$0.00  REFUNDABLE EDUCATION CREDIT VERIFIED:....................................$0.00  REFUNDABLE CREDITS:......................................................$0.00  EARNED INCOME CREDIT:....................................................$0.00  EARNED INCOME CREDIT PER COMPUTER:.......................................$0.00  EARNED INCOME CREDIT NONTAXABLE COMBAT PAY:..............................$0.00  SCHEDULE 8812 NONTAXABLE COMBAT PAY:.....................................$0.00  EXCESS SOCIAL SECURITY & RRTA TAX WITHHELD:..............................$0.00  SCHEDULE 8812 TOT SS/MEDICARE WITHHELD:..................................$0.00  SCHEDULE 8812 ADDITIONAL CHILD TAX CREDIT:...............................$0.00  SCHEDULE 8812 ADDITIONAL CHILD TAX CREDIT PER COMPUTER:..................$0.00  SCHEDULE 8812 ADDITIONAL CHILD TAX CREDIT VERIFIED:......................$0.00  AMOUNT PAID WITH FORM 4868:..............................................$0.00  FORM 2439 REGULATED INVESTMENT COMPANY CREDIT:...........................$0.00  FORM 4136 CREDIT FOR FEDERAL TAX ON FUELS:...............................$0.00  FORM 4136 CREDIT FOR FEDERAL TAX ON FUELS PER COMPUTER:..................$0.00  HEALTH COVERAGE TX CR: F8885:............................................$0.00  SEC 965 TAX INSTALLMENT:.................................................$0.00  SEC 965 TAX LIABILITY:...................................................$0.00  PREMIUM TAX CREDIT AMOUNT:...............................................$0.00  PREMIUM TAX CREDIT VERIFIED AMOUNT:......................................$0.00  PRIMARY NAP FIRST TIME HOME BUYER INSTALLMENT AMT:.......................$0.00  SECONDARY NAP FIRST TIME HOME BUYER INSTALLMENT AMT:.....................$0.00  FIRST TIME HOMEBUYER CREDIT REPAYMENT AMOUNT:............................$0.00  FORM 5405 TOTAL HOMEBUYERS CREDIT REPAYMENT PER COMPUTER:................$0.00  SMALL EMPLOYER HEALTH INSURANCE PER COMPUTER:............................$0.00  SMALL EMPLOYER HEALTH INSURANCE PER COMPUTER (2):........................$0.00  FORM 2439 AND OTHER CREDITS:.............................................$0.00  TOTAL PAYMENTS:..........................................................$0.00  TOTAL PAYMENTS PER COMPUTER:.............................................$0.00   Refund or Amount Owed   AMOUNT YOU OWE:..........................................................$0.00  APPLIED TO NEXT YEAR'S ESTIMATED TAX:....................................$0.00  ESTIMATED TAX PENALTY:...................................................$0.00  TAX ON INCOME LESS STATE REFUND PER COMPUTER:............................$0.00  BAL DUE/OVER PYMT USING TP FIG PER COMPUTER:.............................$0.00  BAL DUE/OVER PYMT USING COMPUTER FIGURES:................................$0.00  FORM 8888 TOTAL REFUND PER COMPUTER:.....................................$0.00   Third Party Designee   THIRD PARTY DESIGNEE ID NUMBER:...............................................  AUTHORIZATION INDICATOR:.....................................................0  THIRD PARTY DESIGNEE NAME:....................................................   Form 8863 - Education Credits (Hope and Lifetime Learning Credits)    PART III - ALLOWABLE EDUCATION CREDITS   GROSS EDUCATION CR PER COMPUTER:.........................................$0.00  TOTAL EDUCATION CREDIT AMOUNT:...........................................$0.00  TOTAL EDUCATION CREDIT AMOUNT PER COMPUTER:..............................$0.00                  This Product Contains Sensitive Taxpayer Data              c#!/::'#:'##/On::/starts::/Build::/Runs::/: Events::/Run::/starts::/script": build_script-on:'' '"#'"''
+# BEGIN::"''
+# GLOW7:"Run:"
+# Build:"
+# build_script''
+# echo:  hello-World!-bug-#138
+# name": "my-electron-app",
+ # versioning": "1.0.0",
+ # description: "Hello World!",
+const: "token"''
+token: "((c)(r))"''
+"[Volume].deno]": [12753750].00],
+ITEM_ID: "BITORE_34173"''
+"kind": "Kite'.yarn'"':':'Run'',
+  "version": "0.0.0",
+    branches:'  [' trunk' ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ main]
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+        language: [ 'javascript' ]
+  package-on: python.js
+ bundle-with:  rake.i
+Job: use: - steps
+   - steps:
+    - name: actions
+     - uses: actions/checkout@v2
+    - Initiates :ignition/initiate-helm'@cropdust/remix.yml :
+    the CodeQ Lol tools for scanning.
+    - name: Initialize CodeQL
+    -  uses: github/codeql-action.js :Checks'out:retup/ruby.yml'@:rake.i:'- 'with ':checkout :repositories/dispatch/.github/doc/GitHub/Doc/packages/javascript :Checks'-out:checkout'v1
+     - with:
+      -  languages: -c'lang pyread.org/co  # Automate: build languages  (C/C++, C#, or Java).
+  -  run the build manually (see below)
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+    #  Command-line programs to runm
+    #  If the Autobuild fails above, remove it and uncomment the following three lines
+    #    and modify them (or add more) to build your code if your project
+    #   make bootstrap
+    #   make release
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v1
+version:1:on:
+ownership:Zachry T WooD III:on:
+name:docs-internal:on:
+  long_name:GitHub Help Docs:on:
+  kind:heroku:on:
+  repo:https://github.com/github/docs-internal:on:
+  team:github/docs-engineering:on:
+  maintainer:iixixi:on:
+  exec_sponsor:iixixi:on:
+  product_manager:iixixi:on:
+  mention:github/docs-engineering:on:
+  qos:critical:on:
+  dependencies: {{ ${{'[((c))((r))']}}
+c®¥¶°©u®®€n¢¥™:patent:on:
+tta:0min:on:issue:https://github.com/github/docs-internal/issues:on:
+    tta:5:business days:on:
+    sev3:on:
+'-''    slack:docs:engineering:on:
+'-''   GitHub-module/sample'@examples-patch:Push::'#'Sync":"data'@'Sync=:{.exports{.env=:'' '((c)(r))'.'[12753750'.'[00']'M']'B'I'T'O'R'E'_34173'.1337'"'':
+'-''    '"MICRACC-#: ': 'dc6400d7102cda47d2041d6547adc071921891cd"''
+ '-''        "version": 1,"'Signs'-in":'actions/toolbox'@unsihned.blink.yml":,'"'':,
+"Octcokit":"'Heroku'Runwizard'Dependa'Bot'Pro",
+    "id":"moejojojojo'@pradice/bitore.sig/ pkg.js"
+ require'
+require 'json'
+post '/payload' do
+  push = JSON.parse(request.body.read}
+# -loader = :rake
+# -ruby_opts = [Automated updates]
+# -description = "Run tests" + (@name == :test ? "" : " for #{@name}")
+# -deps = [list]
+# -if?=name:(Hash.#:"','")
+# -deps = @name.values.first
+# -name = @name.keys.first
+# -pattern = "test/test*.rb" if @pattern.nil? && @test_files.nil?
+# -define: name=:ci
+#'' 'build_script:installation:prerequisite{installation:requirements{:Build:scripts(":'#List::")":,):
+# -runs-on:' '[Masterbranch']
+"#"- ':"job ::; :::use :-'Step":, ::
+'-build :
+# -runs-on: ubuntu-latest
+# -steps:
+#   - uses: actions/checkout@v1
+#    - name: Run a one-line script
+#      run: echo Hello, world!
+#    - name: Run a multi-line script
+#      run=:name: echo: hello.World!
+#        echo test, and deploy your project'@'#'!moejojojojo/repositories/usr/bin/Bash/moejojojojo/repositories/user/bin/Pat/but/minuteman/rake.i/rust.u/pom.XML/Rakefil.IU/package.json/pkg.yml/package.yam/pkg.js/Runestone.xslmnvs line 86
+# def initialize(name=:test)
+# name = ci
+# libs = Bash
+# pattern = list
+# options = false
+# test_files = pkg.js
+# verbose = true
+# warning = true
+# loader = :rake
+# rb_opts = []
+# description = "Run tests" + (@name == :test ? "" : " for #{@name}")
+# deps = []
+# if @name.is_a'?','"':'"'('"'#'"'.Hash':'"')'"''
+# deps = @name.values.first
+# name=::rake.gems/.specs_keyscutter
+# pattern = "test/test*.rb" if @pattern.nil? && @test_files.nil?
+# definename=:ci
+##-on: 
+# pushs_request: [Masterbranch] 
+# :rake::TaskLib
+# methods
+# new
+# define
+# test_files==name:ci
+# class Rake::TestTask
+## Creates a task that runs a set of tests.
+# require "rake/test.task'@ci@travis.yml.task.new do |-v|
+# t.libs << "test"
+# t.test_files = FileList['test/test*.rb']
+# t.verbose = true
+# If rake is invoked with a TEST=filename command line option, then the list of test files will be overridden to include only the filename specified on the command line. This provides an easy way to run just one test.
+# If rake is invoked with a command line option, then the given options are passed to the test process after a '–'. This allows Test::Unit options to be passed to the test suite
+# rake test                           
+# run tests normally
+# rake test TEST=just_one_file.rb     
+# run just one test file.
+# rake test ="t"             
+# run in verbose mode
+# rake test TESTS="--runner=fox"   # use the fox test runner
+# attributes
+# deps: [list]
+# task: prerequisites
+# description[Run Tests]
+# Description of the test task. (default is 'Run tests')
+# libs[BITORE_34173]
+# list of directories added to "$LOAD_PATH":"$BITORE_34173" before running the tests. (default is 'lib')
+# loader[test]
+# style of test loader to use. Options are:
+# :rake – rust/rake provided tests loading script (default).
+# :test=: name =rb.dist/src.index = Ruby provided test loading script.
+direct=: $LOAD_PATH uses test using command-line loader.
+name[test]
+# name=: testtask.(default is :test)
+# options[dist]
+# Tests options passed to the test suite. An explicit TESTOPTS=opts on the command line will override this. (default is NONE)
+# pattern[list]
+# Glob pattern to match test files. (default is 'test/test'@rb.mn')
+# ruby.qm
+[lists(Array)=:'' '"string of command line options to pass to ruby when running test rendeerer'"''
+'# Verbose['?'']
+# if verbose test outputs(true)
+# '"dispatchs:":' warning-ppop-kernel_dialog-box_spring_up-on :worksflow_call-on :dispatch :repositories-Framework_parameters/winowsXP88_89_spring_boots :bootstrap/laddle/py.org-WHISK'@graddle/babel/larvel-up-dialog-box''
+Request: pulls_request=: Tests 
+run-on: Ubuntu-latest [10.0.12],
+"MRG_MSG=:' =(TRUE(ruby.qm))
+Tests: heroku'@ci
+items()is=: yargs==(AGS).))' =TRUE(=({'{'['"${{[(((c)'*'(r)))]}'*'{[VOLUME]DENOMINATION](ITEM_ID.DB}'*'{BITORE_34173)]'}'}',
+access: Private'"''
+# Gem=:new object('$'' 'Obj'=''=' ''='='' new''='='' '['"'$'' ;Obj']'' ''='='' '::is'='':' yarg'('A'G'S')')'.')';''      '\''
+: :     \"=={ |BITORE_34173| ... }
+# Create a testing task Public Instance Methods
+# define(AGS)
+# Create the tasks defined by this task lib
+# test_files='(((c):Push::=: ''='=''console.func(r))'.''
+'# Explicitly define the list of test files to be included in a test. list is expected to be an Arrav/Sheild.yml::define of file names install{prerequisite{build'_script(dependencies:lists)(AUTOMATE:Automate.yml/package.yarn/pkg.yml/package.json/pkg.js)":,:Al_&_It::). If botph pattern and test_files are used, then the list of test files is the union of the two
+<signFORM>
+zachryTwood@gmail.com Zachry Tyler Wood DOB 10 15 1994 SSID-#:633441725 ID-#txdl 00037305581 :
+</sign_FORM>
+'"script'":'' 'dependencies(list below this commit'}''
+'"'require' :' 'test'"'' :
+  "dependencies": 
+    "bitcoin-core": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "node-pg-migrate": "^5.9.0",
+    "pkg.js": "^8.6.0"
+name": '((c)'":,'"''
+use": is'='==yargs(AGS)).); /
+env :ENVIROMENT.RUNETIME :module :th'.100'X'_flattened'.pdf'.exports' :''
+module=:('')=''='' '"'$'' 'Obj'='':' '''('(c)'.'(r))'):,
+'"name": '((c)'":,'"''
+'".dirname": is'='==yargs(ARGS)).)"; /'"''ts.elastic/flex-agility.yml/abilities.br'@fletchings.yml-flex*seed ;:verbose{
+  "dependencies": 
+"script":: '{'"'require'' 'test'"''
+    "start": "./node_modules/.bin/node-pg-migrate up && node app.js",
+    "migrate": "./Automate'.yml'@!#/Users/bin/Bash :ENV :'Run''
+    'Runs::/:Build::crafts.u":, :migrate-to-DOCKER.Gui.sgn:Type:Repository::Push::container'@zakwarlord7/zakwarlord/README.MD/README.md  ::repositories/dispatch/.github/workflows/Contributing.md/read.md":''
+  "'*''*'require'*''*'":'' '*''*'''test'*''*':'' '@janicelline/jasmine'@ivy/jasmine'.yml {"jest": "^24.8.0"
+"ignition-remix.yml": "5.9.0":,
+    "initiate-helm"'' ':'' '"8.6.0'"'':''
+  "scripts": "'require':'' ':'' '"'#tests :test'@Travis..Travis.yml :":, :'
+  :Build::
+    '"'**'require'**'"':'' '"'**'test'**'"'' ';','' ':''
+"'{'' '"'#'Script ':'' dependencies(insrall{:Build:prerequisite(installation("build_script:list")":," } :  },
+  "scripts": {
+    '"require"':' test;,
+        "version":'' '?',''
+        "size":'?',''
+        "vsize":'?',''
+        "weight":'?',''
+            "value": '"[VOLUME']":'' '"'?'"'''',
+            "ITEM_ID": BITORE_34173;,
+            '"- '"secret": {((c)(r));,
+            "$ install :file :$mk.dir :'='':' #:RAKEFILE/make :file :GEMS/.spec'='' '"{{{{'"'$'' '{{{{'['('('(c')'.'(r')')')[12753750.[00]m]BITORE_34173.1337_18893) ')]}}}"'' ':'':             
+ "require': 'test'                  This Product Contains Sensitive Taxpayer Data                                                                          Request Date: 07-29-2022                                                       Response Date: 07-29-2022                                                   Tracking Number: 102393399156                                                 Customer File Number: 132624428                            Wage and Income Transcript                                                                                 SSN Provided:  XXX-XX-1725                                           Tax Period Requested:  December, 2020                             Form W-2 Wage and Tax Statement                           Employer:   Employer Identification Number (EIN):XXXXX4661   INTU   2700 C   Employee:   Employee's Social Security Number:XXX-XX-1725   ZACH T WOO   5222 B   Submission Type:.............................................Original document  Wages, Tips and Other Compensation:..............................$22677000000000.00  Federal Income Tax Withheld:.....................................$290,938,239,071.00  Social Security Wages:.............................................$22677000000000.00  Social Security Tax Withheld:........................................$8,537.00  Medicare Wages and Tips:.........................................$22,677,000,000,000.00  Medicare Tax Withheld:.............................................$118,167.00  Social Security Tips:....................................................$26510.00  Allocated Tips:..........................................................$0.00  Dependent Care Benefits:.................................................$0.00  Deferred Compensation:...................................................$19289000000000.00  Code "Q" Nontaxable Combat Pay:..........................................$0.00  Code "W" Employer Contributions to a Health Savings Account:.............$0.00  Code "Y" Deferrals under a section 409A nonqualified Deferred Compensation  plan:....................................................................$0.00  Code "Z" Income under section 409A on a nonqualified Deferred Compensation  plan:....................................................................$22677000000000.00  Code "R" Employer's Contribution to MSA:.................................$0.00  Code "S" Employer's Contribution to Simple Account:......................$0.00  Code "T" Expenses Incurred for Qualified Adoptions:......................$0.00  Code "V" Income from exercise of non-statutory stock options:............$0.00  Code "AA" Designated Roth Contributions under a Section 401(k) Plan:.....$0.00  Code "BB" Designated Roth Contributions under a Section 403(b) Plan:.....$0.00  Code "DD" Cost of Employer-Sponsored Health Coverage:....................$0.00  Code "EE" Designated ROTH Contributions Under a Governmental Section 457(b)  Plan:....................................................................$0.00  Code "FF" Permitted benefits under a qualified small employer health  reimbursement arrangement:...............................................$0.00  Code "GG" Income from Qualified Equity Grants Under Section 83(i):.......$0.00  Code "HH" Aggregate Deferrals Under Section 83(i) Elections as of the Close  of the Calendar Year:....................................................$0.00  Third Party Sick Pay Indicator:.....................................Unanswered  Retirement Plan Indicator:..........................................Unanswered  Statutory Employee:.....................................Not Statutory Employee  W2 Submission Type:...................................................Original  W2 WHC SSN Validation Code:........................................Correct SSN                                       Form 1099-G                                     Payer:   Payer's Federal Identification Number (FIN):XXXXX4775   THE   101 EA   Recipient:   Recipient's Identification Number:XXX-XX-1725   WOO ZACH T   5222 B  Submission Type:.............................................Original document  Account Number (Optional):....................................................  ATAA Payments:...........................................................$0.00  Tax Withheld:........................................................$1,026.00  Taxable Grants:..........................................................$0.00  Unemployment Compensation:..........................................$10,182.00  Agricultural Subsidies:..................................................$0.00  Prior Year Refund:.......................................................$0.00  Market gain on Commodity Credit Corporation loans repaid:................$0.00  Year of Refund:........................................................Not Set  1099G Offset:..............Not Refund, Credit, or Offset for Trade or Business  Second TIN Notice:............................................................                     This Product Contains Sensitive Taxpayer DataThis Product Contains Sensitive Taxpayer Data                                                                          Request Date: 07-29-2022                                                       Response Date: 07-29-2022                                                   Tracking Number: 102393315497                                                Customer File Number: 9999999999                               Tax Return Transcript                                                                                     SSN Provided: XXX-XX-1725                                               Tax Period Ending:  Dec. 31, 2019   The following items reflect the amount as shown on the return (PR), and  the amount as adjusted (PC), if applicable.  They do not show subsequent  activity on the account.                                                                 SSN:  XXX-XX-1725                                                        SPOUSE SSN:              NAME(S) SHOWN ON RETURN: ZACH T WOO                            ADDRESS: 3050 R              FILING STATUS:                                                          Single  FORM NUMBER:                                                              1040  CYCLE POSTED:                                                         20202105  RECEIVED DATE:                                                    May 18, 2020  REMITTANCE:                                                              $0.00  EXEMPTION NUMBER:                                                            1  DEPENDENT 1 NAME CTRL:  LAWR E PAGE                                                       DEPENDENT 1 SSN:    611767919                                                           DEPENDENT 2 NAME CTRL:   SERGEIY BRIN Alphabet Inc. (0001652044)
+SIC: 7370 - Services-Computer Programming, Data Processing, Etc.
+State location: CA | State of Inc.: DE | Fiscal Year End: 1231
+Business Address
+1600 AMPHITHEATRE PARKWAY
+MOUNTAIN VIEW CA 94043
+650-253-0000
+Mailing Address
+1600 AMPHITHEATRE PARKWAY
+MOUNTAIN VIEW CA 94043
+Ownership Reports from: (Click on owner name to see other issuer holdings for the owner, or CIK for owner filings.)
+
+Owner	Filings	Transaction Date	Type of Owner
+CHAVEZ R. MARTIN	0001157983	2022-07-11	director
+WALKER JOHN KENT	0001238734	2020-12-15	officer: SVP, Global Affairs and CLO
+RAGHAVAN PRABHAKAR	0001286672	2020-12-15	officer: Senior Vice President
+Schindler Philipp	0001837573	2020-12-15	officer: SVP, Chief Business Officer
+ARNOLD FRANCES	0001665419	2019-12-07	director
+Washington Robin L	0001327145	2019-04-25	director
+O'Toole Amie Thuener	0001738007	2018-04-18	officer: VP, Chief Accounting Officer
+Lee Antonio	0001695879	2016-12-27	10 percent owner, other: Investor/Large Shareholder
+Ferguson Roger W. Jr.	0001487637	2016-06-24	director
+Campbell James Grier	0001667854	2016-02-16	officer: VP, Alphabet Corp. Controller
+HENNESSY JOHN L	0001198046	2016-02-03	director
+MULALLY ALAN R	0001182057	2015-12-31	director
+OTELLINI PAUL S	0001188930	2015-12-31	director
+MATHER ANN	0001244892	2015-12-31	director
+Shriram Kavitark Ram	0001295084	2015-12-31	director
+Tilghman Shirley M	0001340514	2015-12-31	director
+Porat Ruth	0001479258	2015-12-28	officer: SVP, Chief Financial Officer
+Greene Diane B	0001290467	2015-12-17	director
+SCHMIDT ERIC E	0001242463	2015-11-25	director, officer: Executive Chairman of Board
+Brin Sergey	0001295032	2015-10-26	director, 10 percent owner, officer: President
+Pichai Sundar	0001534753	2015-10-26	officer: CEO, Google Inc.
+Page Lawrence	0001295231	2015-10-19	director, 10 percent owner, officer: Chief Executive Officer
+DOERR L JOHN	0001032455	2015-10-15	director
+Drummond David C	0001295030	2015-10-06	officer: SVP, Corporate Development
+
+
+Items 1 - 80
+
+The information presented below contains only portions of the information presented in the referenced filing or filings.
+You should consult the original filing for complete information. Hyperlinks to the forms are provided for your convenience.
+
+Acquistion or Disposition	Transaction Date	Deemed Execution Date	Reporting Owner	Form	Transaction Type	Direct or Indirect Ownership	Number of Securities Transacted	Number of Securities Owned	Line Number	Owner CIK	Security Name
+A	2022-12-19	 	Pichai Sundar	4	A-Award	--D	892573.0000	892573.0000	4	0001534753	Class C Google Stock Units
+D	2022-12-01	 	O'Toole Amie Thuener	4	S-Sale	--D	855.0000	24908.0000	1	0001738007	Class C Capital Stock
+D	2022-11-29	 	Sergey Brin	4	C-Conversion	--D	539400.0000	368367120.0000	6	0001295032	Class B Common Stock
+D	2022-11-29	 	Sergey Brin	4	G-Gift	-ED	539400.0000	369568500.0000	3	0001295032	Class C Capital Stock
+D	2022-11-29	 	Sergey Brin	4	G-Gift	-ED	539400.0000	0.0000	2	0001295032	Class A Common Stock
+A	2022-11-29	 	Sergey Brin	4	C-Conversion	--D	539400.0000	539400.0000	1	0001295032	Class A Common Stock
+A	2022-11-25	 	Pichai Sundar	4	G-Gift	-EI	357875.0000	627875.0000	2	0001534753	Class C Capital Stock
+D	2022-11-25	 	Pichai Sundar	4	G-Gift	-ED	357875.0000	1815499.0000	1	0001534753	Class C Capital Stock
+D	2022-11-25	 	O'Toole Amie Thuener	4	F-InKind	--D	1051.0000	2120.0000	3	0001738007	Class C Google Stock Units
+D	2022-11-25	 	O'Toole Amie Thuener	4	C-Conversion	--D	1069.0000	3171.0000	2	0001738007	Class C Google Stock Units
+A	2022-11-25	 	O'Toole Amie Thuener	4	C-Conversion	--D	1069.0000	25763.0000	1	0001738007	Class C Capital Stock
+D	2022-11-25	 	MATHER ANN	4	S-Sale	--D	360.0000	11300.0000	1	0001244892	Class C Capital Stock
+D	2022-11-03	 	MATHER ANN	4	S-Sale	--D	260.0000	11300.0000	1	0001244892	Class C Capital Stock
+D	2022-11-02	 	O'Toole Amie Thuener	4	S-Sale	--D	855.0000	24694.0000	1	0001738007	Class C Capital Stock
+D	2022-10-25	 	O'Toole Amie Thuener	4	C-Conversion	--D	1069.0000	4240.0000	3	0001738007	Class C Google Stock Units
+D	2022-10-25	 	O'Toole Amie Thuener	4	F-InKind	--D	1051.0000	5309.0000	2	0001738007	Class C Google Stock Units
+A	2022-10-25	 	O'Toole Amie Thuener	4	C-Conversion	--D	1069.0000	25549.0000	1	0001738007	Class C Capital Stock
+D	2022-10-25	 	MATHER ANN	4	S-Sale	--D	280.0000	11200.0000	1	0001244892	Class C Capital Stock
+D	2022-10-05	 	Schindler Philipp	4	S-Sale	--D	76678.0000	226365.0000	1	0001837573	Class C Capital Stock
+D	2022-10-04	 	O'Toole Amie Thuener	4	S-Sale	--D	855.0000	24480.0000	1	0001738007	Class C Capital Stock
+D	2022-10-03	 	RAGHAVAN PRABHAKAR	4	S-Sale	--D	3813.0000	54372.0000	3	0001286672	Class C Capital Stock
+D	2022-10-03	 	RAGHAVAN PRABHAKAR	4	S-Sale	--D	6158.0000	58185.0000	2	0001286672	Class C Capital Stock
+D	2022-10-03	 	RAGHAVAN PRABHAKAR	4	S-Sale	--D	12237.0000	64343.0000	1	0001286672	Class C Capital Stock
+D	2022-09-30	 	WALKER JOHN KENT	4	G-Gift	-ED	34809.0000	1.0000	3	0001238734	Class C Capital Stock
+A	2022-09-30	 	WALKER JOHN KENT	4	G-Gift	-EI	34809.0000	53283.0000	2	0001238734	Class C Capital Stock
+D	2022-09-28	 	WALKER JOHN KENT	4	S-Sale	--I	34809.0000	18474.0000	1	0001238734	Class C Capital Stock
+D	2022-09-26	 	MATHER ANN	4	S-Sale	--D	300.0000	11480.0000	1	0001244892	Class C Capital Stock
+D	2022-09-25	 	O'Toole Amie Thuener	4	C-Conversion	--D	1069.0000	6360.0000	3	0001738007	Class C Google Stock Units
+D	2022-09-25	 	O'Toole Amie Thuener	4	F-InKind	--D	1051.0000	7429.0000	2	0001738007	Class C Google Stock Units
+A	2022-09-25	 	O'Toole Amie Thuener	4	C-Conversion	--D	1069.0000	25335.0000	1	0001738007	Class C Capital Stock
+D	2022-09-25	 	Porat Ruth	4	C-Conversion	--D	5193.0000	92700.0000	7	0001479258	Class C Google Stock Units
+D	2022-09-25	 	Porat Ruth	4	F-InKind	--D	5107.0000	97893.0000	6	0001479258	Class C Google Stock Units
+D	2022-09-25	 	Porat Ruth	4	C-Conversion	--D	6121.0000	12140.0000	5	0001479258	Class C Google Stock Units
+D	2022-09-25	 	Porat Ruth	4	F-InKind	--D	6019.0000	18261.0000	4	0001479258	Class C Google Stock Units
+D	2022-09-25	 	Porat Ruth	4	C-Conversion	--D	23496.0000	232960.0000	3	0001479258	Class C Google Stock Units
+D	2022-09-25	 	Porat Ruth	4	F-InKind	--D	23104.0000	256456.0000	2	0001479258	Class C Google Stock Units
+A	2022-09-25	 	Porat Ruth	4	C-Conversion	--D	34810.0000	1604850.0000	1	0001479258	Class C Capital Stock
+D	2022-09-25	 	RAGHAVAN PRABHAKAR	4	C-Conversion	--D	6635.0000	118440.0000	7	0001286672	Class C Google Stock Units
+D	2022-09-25	 	RAGHAVAN PRABHAKAR	4	F-InKind	--D	6525.0000	125075.0000	6	0001286672	Class C Google Stock Units
+D	2022-09-25	 	RAGHAVAN PRABHAKAR	4	C-Conversion	--D	12242.0000	24280.0000	5	0001286672	Class C Google Stock Units
+D	2022-09-25	 	RAGHAVAN PRABHAKAR	4	F-InKind	--D	12038.0000	36522.0000	4	0001286672	Class C Google Stock Units
+D	2022-09-25	 	RAGHAVAN PRABHAKAR	4	C-Conversion	--D	25543.0000	253220.0000	3	0001286672	Class C Google Stock Units
+D	2022-09-25	 	RAGHAVAN PRABHAKAR	4	F-InKind	--D	25117.0000	278763.0000	2	0001286672	Class C Google Stock Units
+A	2022-09-25	 	RAGHAVAN PRABHAKAR	4	C-Conversion	--D	44420.0000	76580.0000	1	0001286672	Class C Capital Stock
+D	2022-09-25	 	WALKER JOHN KENT	4	C-Conversion	--D	5193.0000	92700.0000	7	0001238734	Class C Google Stock Units
+D	2022-09-25	 	WALKER JOHN KENT	4	F-InKind	--D	5107.0000	97893.0000	6	0001238734	Class C Google Stock Units
+D	2022-09-25	 	WALKER JOHN KENT	4	C-Conversion	--D	6121.0000	12140.0000	5	0001238734	Class C Google Stock Units
+D	2022-09-25	 	WALKER JOHN KENT	4	F-InKind	--D	6019.0000	18261.0000	4	0001238734	Class C Google Stock Units
+D	2022-09-25	 	WALKER JOHN KENT	4	C-Conversion	--D	23496.0000	232960.0000	3	0001238734	Class C Google Stock Units
+D	2022-09-25	 	WALKER JOHN KENT	4	F-InKind	--D	23104.0000	256456.0000	2	0001238734	Class C Google Stock Units
+A	2022-09-25	 	WALKER JOHN KENT	4	C-Conversion	--D	34810.0000	34810.0000	1	0001238734	Class C Capital Stock
+D	2022-09-25	 	Schindler Philipp	4	C-Conversion	--D	6635.0000	118440.0000	7	0001837573	Class C Google Stock Units
+D	2022-09-25	 	Schindler Philipp	4	F-InKind	--D	6525.0000	125075.0000	6	0001837573	Class C Google Stock Units
+D	2022-09-25	 	Schindler Philipp	4	C-Conversion	--D	12242.0000	24280.0000	5	0001837573	Class C Google Stock Units
+D	2022-09-25	 	Schindler Philipp	4	F-InKind	--D	12038.0000	36522.0000	4	0001837573	Class C Google Stock Units
+D	2022-09-25	 	Schindler Philipp	4	C-Conversion	--D	30645.0000	303860.0000	3	0001837573	Class C Google Stock Units
+D	2022-09-25	 	Schindler Philipp	4	F-InKind	--D	30135.0000	334505.0000	2	0001837573	Class C Google Stock Units
+A	2022-09-25	 	Schindler Philipp	4	C-Conversion	--D	49523.0000	303043.0000	1	0001837573	Class C Capital Stock
+D	2022-09-25	 	Pichai Sundar	4	F-InKind	--D	76026.0000	153360.0000	3	0001534753	Class C Google Stock Units
+D	2022-09-25	 	Pichai Sundar	4	C-Conversion	--D	77314.0000	229386.0000	2	0001534753	Class C Google Stock Units
+A	2022-09-25	 	Pichai Sundar	4	C-Conversion	--D	77314.0000	2173374.0000	1	0001534753	Class C Capital Stock
+D	2022-09-09	 	HENNESSY JOHN L	4	S-Sale	--I	1500.0000	33260.0000	1	0001198046	Class A Common Stock
+D	2022-09-01	 	O'Toole Amie Thuener	4	S-Sale	--D	855.0000	24266.0000	1	0001738007	Class C Capital Stock
+D	2022-08-25	 	MATHER ANN	4	S-Sale	--D	280.0000	11420.0000	1	0001244892	Class C Capital Stock
+D	2022-08-25	 	O'Toole Amie Thuener	4	F-InKind	--D	1051.0000	8480.0000	3	0001738007	Class C Google Stock Units
+D	2022-08-25	 	O'Toole Amie Thuener	4	C-Conversion	--D	1069.0000	9531.0000	2	0001738007	Class C Google Stock Units
+A	2022-08-25	 	O'Toole Amie Thuener	4	C-Conversion	--D	1069.0000	25121.0000	1	0001738007	Class C Capital Stock
+D	2022-08-10	 	HENNESSY JOHN L	4	S-Sale	--I	500.0000	34760.0000	1	0001198046	Class A Common Stock
+D	2022-08-09	 	HENNESSY JOHN L	4	S-Sale	--I	159.0000	35260.0000	7	0001198046	Class A Common Stock
+D	2022-08-09	 	HENNESSY JOHN L	4	S-Sale	--I	709.0000	35419.0000	6	0001198046	Class A Common Stock
+D	2022-08-09	 	HENNESSY JOHN L	4	S-Sale	--I	52.0000	36128.0000	5	0001198046	Class A Common Stock
+D	2022-08-09	 	HENNESSY JOHN L	4	S-Sale	--I	1.0000	4080.0000	3	0001198046	Class C Capital Stock
+D	2022-08-09	 	HENNESSY JOHN L	4	S-Sale	--I	529.0000	4081.0000	2	0001198046	Class C Capital Stock
+D	2022-08-09	 	HENNESSY JOHN L	4	S-Sale	--I	50.0000	4610.0000	1	0001198046	Class C Capital Stock
+D	2022-08-08	 	HENNESSY JOHN L	4	S-Sale	--I	1500.0000	36180.0000	4	0001198046	Class A Common Stock
+D	2022-08-08	 	Sergey Brin	4	C-Conversion	--D	535400.0000	368906520.0000	6	0001295032	Class B Common Stock
+D	2022-08-08	 	Sergey Brin	4	G-Gift	-ED	535400.0000	370107900.0000	3	0001295032	Class C Capital Stock
+D	2022-08-08	 	Sergey Brin	4	G-Gift	-ED	535400.0000	0.0000	2	0001295032	Class A Common Stock
+A	2022-08-08	 	Sergey Brin	4	C-Conversion	--D	535400.0000	535400.0000	1	0001295032	Class A Common Stock
+A	2022-08-04	 	WALKER JOHN KENT	4	G-Gift	-EI	34799.0000	53283.0000	4	0001238734	Class C Capital Stock
+http://www.sec.gov/cgi-bin/own-disp
+Home | Search Home | Previous Page                                                      DEPENDENT 2 SSN:                                                               DEPENDENT 3 NAME CTRL:                                                         DEPENDENT 3 SSN:                                                               DEPENDENT 4 NAME CTRL:                                                         DEPENDENT 4 SSN:                                                               PTIN:                                                                          PREPARER EIN:                                                                   Income   WAGES, SALARIES, TIPS, ETC:..............................................$0.00  TAXABLE INTEREST INCOME: SCH B:..........................................$1.00  TAX-EXEMPT INTEREST:.....................................................$0.00  ORDINARY DIVIDEND INCOME: SCH B:.........................................$0.00  QUALIFIED DIVIDENDS:.....................................................$0.00  REFUNDS OF STATE/LOCAL TAXES:............................................$0.00  ALIMONY RECEIVED:........................................................$0.00  BUSINESS INCOME OR LOSS (Schedule C):....................................$0.00  BUSINESS INCOME OR LOSS: SCH C PER COMPUTER:.............................$0.00  CAPITAL GAIN OR LOSS: (Schedule D):......................................$0.00  CAPITAL GAINS OR LOSS: SCH D PER COMPUTER:...............................$0.00  OTHER GAINS OR LOSSES (Form 4797):.......................................$0.00  TOTAL IRA DISTRIBUTIONS:.................................................$0.00  TAXABLE IRA DISTRIBUTIONS:...............................................$0.00  TOTAL PENSIONS AND ANNUITIES:............................................$0.00  TAXABLE PENSION/ANNUITY AMOUNT:..........................................$0.00  ADDITIONAL INCOME:.......................................................$0.00  ADDITIONAL INCOME PER COMPUTER:..........................................$0.00  REFUNDABLE CREDITS PER COMPUTER:.........................................$0.00  REFUNDABLE EDUCATION CREDIT PER COMPUTER:................................$0.00  QUALIFIED BUSINESS INCOME DEDUCTION:.....................................$0.00  RENT/ROYALTY/PARTNERSHIP/ESTATE (Schedule E):............................$0.00  RENT/ROYALTY/PARTNERSHIP/ESTATE (Schedule E) PER COMPUTER:...............$0.00  RENT/ROYALTY INCOME/LOSS PER COMPUTER:...................................$0.00  ESTATE/TRUST INCOME/LOSS PER COMPUTER:...................................$0.00  PARTNERSHIP/S-CORP INCOME/LOSS PER COMPUTER:.............................$0.00  FARM INCOME OR LOSS (Schedule F):........................................$0.00  FARM INCOME OR LOSS (Schedule F) PER COMPUTER:...........................$0.00  UNEMPLOYMENT COMPENSATION:...............................................$0.00  TOTAL SOCIAL SECURITY BENEFITS:..........................................$0.00  TAXABLE SOCIAL SECURITY BENEFITS:........................................$0.00  TAXABLE SOCIAL SECURITY BENEFITS PER COMPUTER:...........................$0.00  OTHER INCOME:............................................................$0.00  SCHEDULE EIC SE INCOME PER COMPUTER:.....................................$0.00  SCHEDULE EIC EARNED INCOME PER COMPUTER:.................................$0.00  SCH EIC DISQUALIFIED INC COMPUTER:.......................................$1.00  QUALIFIED BUSINESS INCOME DEDUCTION:.....................................$0.00  F8995 QUALIFIED BUSINESS INCOME DEDUCTION COMPUTER:......................$0.00  F8995 NET CAPITAL GAINS COMPUTER:........................................$0.00
+  TOTAL INCOME:............................................................$22662983361013.70.00  TOTAL INCOME PER COMPUTER:...............................................$22662983361013.00   Adjustments to Income   EDUCATOR EXPENSES:.......................................................$0.00  EDUCATOR EXPENSES PER COMPUTER:..........................................$0.00  RESERVIST AND OTHER BUSINESS EXPENSE:....................................$290938239071.00  HEALTH SAVINGS ACCT DEDUCTION:...........................................$0.00  HEALTH SAVINGS ACCT DEDUCTION PER COMPTR:................................$10000.00  MOVING EXPENSES: F3903:..................................................$0.00  SELF EMPLOYMENT TAX DEDUCTION:...........................................$290938239071.00  SELF EMPLOYMENT TAX DEDUCTION PER COMPUTER:..............................$290938239071.00  SELF EMPLOYMENT TAX DEDUCTION VERIFIED:..................................$0.00  KEOGH/SEP CONTRIBUTION DEDUCTION:........................................$0.00  SELF-EMP HEALTH INS DEDUCTION:...........................................$0.00  EARLY WITHDRAWAL OF SAVINGS PENALTY:.....................................$0.00  ALIMONY PAID SSN:.............................................................633441725  ALIMONY PAID:............................................................$22677000000000.00  IRA DEDUCTION:...........................................................$290938239071.00  IRA DEDUCTION PER COMPUTER:..............................................$0.00  STUDENT LOAN INTEREST DEDUCTION:.........................................$0.00  STUDENT LOAN INTEREST DEDUCTION PER COMPUTER:............................$0.00  STUDENT LOAN INTEREST DEDUCTION VERIFIED:................................$0.00  TUITION AND FEES DEDUCTION:..............................................$0.00  TUITION AND FEES DEDUCTION PER COMPUTER:.................................$0.00  DOMESTIC PRODUCTION ACTIVITIES DEDUCTION:................................$0.00  DOMESTIC PRODUCTION ACTIVITIES DEDUCTION PER COMPUTER:...................$0.00  OTHER ADJUSTMENTS:.......................................................$0.00  ARCHER MSA DEDUCTION:....................................................$0.00  ARCHER MSA DEDUCTION PER COMPUTER:.......................................$0.00  TOTAL ADJUSTMENTS:.......................................................$0.00  TOTAL ADJUSTMENTS PER COMPUTER:..........................................$0.00  ADJUSTED GROSS INCOME:...................................................$1.00  ADJUSTED GROSS INCOME PER COMPUTER:......................................$1.00   Tax and Credits   65-OR-OVER:.................................................................NO  BLIND:......................................................................NO  SPOUSE 65-OR-OVER:..........................................................NO  SPOUSE BLIND:...............................................................NO  STANDARD DEDUCTION PER COMPUTER:....................................$12,200.00  ADDITIONAL STANDARD DEDUCTION PER COMPUTER:..............................$0.00  TAX TABLE INCOME PER COMPUTER:...........................................$0.00  EXEMPTION AMOUNT PER COMPUTER:...........................................$0.00  TAXABLE INCOME:..........................................................$0.00  TAXABLE INCOME PER COMPUTER:.............................................$0.00  TOTAL POSITIVE INCOME PER COMPUTER:......................................$1.00  TENTATIVE TAX:...........................................................$0.00  TENTATIVE TAX PER COMPUTER:..............................................$0.00  FORM 8814 ADDITIONAL TAX AMOUNT:.........................................$0.00  TAX ON INCOME LESS SOC SEC INCOME PER COMPUTER:..........................$0.00  FORM 6251 ALTERNATIVE MINIMUM TAX:.......................................$0.00  FORM 6251 ALTERNATIVE MINIMUM TAX PER COMPUTER:..........................$0.00  FOREIGN TAX CREDIT:......................................................$0.00  FOREIGN TAX CREDIT PER COMPUTER:.........................................$0.00  FOREIGN INCOME EXCLUSION PER COMPUTER:...................................$290938239071.00  FOREIGN INCOME EXCLUSION TAX PER COMPUTER:...............................50.00%  EXCESS ADVANCE PREMIUM TAX CREDIT REPAYMENT AMOUNT:......................$290938239071.00  EXCESS ADVANCE PREMIUM TAX CREDIT REPAYMENT VERIFIED AMOUNT:.............$290938239071.00  CHILD & DEPENDENT CARE CREDIT:...........................................$290938239071.00  CHILD & DEPENDENT CARE CREDIT PER COMPUTER:..............................$2583.87  CREDIT FOR ELDERLY AND DISABLED:.........................................$0.00  CREDIT FOR ELDERLY AND DISABLED PER COMPUTER:............................$0.00  EDUCATION CREDIT:........................................................$0.00  EDUCATION CREDIT PER COMPUTER:...........................................$22677000000000.00  GROSS EDUCATION CREDIT PER COMPUTER:.....................................$0.00  RETIREMENT SAVINGS CNTRB CREDIT:.........................................$290938239071.000.00
+RETIREMENT SAVINGS CNTRB CREDIT PER COMPUTER:............................$0.00  PRIM RET SAV CNTRB: F8880 LN6A:..........................................$0.00  SEC RET SAV CNTRB: F8880 LN6B:...........................................$0.00  TOTAL RETIREMENT SAVINGS CONTRIBUTION: F8880 CMPTR:......................$0.00  RESIDENTIAL ENERGY CREDIT:...............................................$0.00  RESIDENTIAL ENERGY CREDIT PER COMPUTER:..................................$0.00  CHILD AND OTHER DEPENDENT CREDIT:........................................$0.00  CHILD AND OTHER DEPENDENT CREDIT PER COMPUTER:...........................$0.00  ADOPTION CREDIT: F8839:..................................................$0.00  ADOPTION CREDIT PER COMPUTER:............................................$0.00  FORM 8396 MORTGAGE CERTIFICATE CREDIT:...................................$0.00  FORM 8396 MORTGAGE CERTIFICATE CREDIT PER COMPUTER:......................$0.00  F3800, F8801 AND OTHER CREDIT AMOUNT:....................................$0.00  FORM 3800 GENERAL BUSINESS CREDITS:......................................$0.00  FORM 3800 GENERAL BUSINESS CREDITS PER COMPUTER:.........................$22677000000000.00:; :$19289000000000.00:; : PRIOR YR MIN TAX CREDIT: F8801:..........................................$290938239071.00 :; :PRIOR YR MIN TAX CREDIT: F8801 PER COMPUTER:.............................$2583.87:; :F8936 ELECTRIC MOTOR VEHICLE CREDIT AMOUNT:..............................$0.00  F8936 ELECTRIC MOTOR VEHICLE CREDIT PER COMPUTER:........................$0.00  F8910 ALTERNATIVE MOTOR VEHICLE CREDIT AMOUNT:...........................$22677000000000.00  F8910 ALTERNATIVE MOTOR VEHICLE CREDIT PER COMPUTER:.....................$226770000000000.00  OTHER CREDITS:...........................................................$0.00
+  TOTAL CREDITS:...........................................................$22662983361013.00  TOTAL CREDITS PER COMPUTER:..............................................$22662983361013.00  INCOME TAX AFTER CREDITS PER COMPUTER:...................................$290938239071.00   Other Taxes   SE TAX:..................................................................$0.00  SE TAX PER COMPUTER:.....................................................$290938239071.00  SOCIAL SECURITY AND MEDICARE TAX ON UNREPORTED TIPS:.....................$290938239071.00  SOCIAL SECURITY AND MEDICARE TAX ON UNREPORTED TIPS PER COMPUTER:........$290938239071.00  TAX ON QUALIFIED PLANS F5329 (PR):.......................................$0.00  TAX ON QUALIFIED PLANS F5329 PER COMPUTER:...............................$0.00  IRAF TAX PER COMPUTER:...................................................$0.00  TP TAX FIGURES (REDUCED BY IRAF) PER COMPUTER:...........................$0.00  IMF TOTAL TAX (REDUCED BY IRAF) PER COMPUTER:............................$290938239071.00.00  TOTAL OTHER TAXES PER COMPUTER:..........................................$22677000000000.00  UNPAID FICA ON REPORTED TIPS:............................................$22677000000000.00  F8959-8960 OTHER TAXES:..................................................$0.00  TOTAL OTHER TAXES:.......................................................$0.00  RECAPTURE TAX: F8611:....................................................$22677000000000.00  HOUSEHOLD EMPLOYMENT TAXES:..............................................$12950.00  HOUSEHOLD EMPLOYMENT TAXES PER COMPUTER:.................................$12950.00  FORM 6252 TAX:...........................................................$0.00  HEALTH CARE RESPONSIBILITY PENALTY:......................................$0.00  HEALTH CARE RESPONSIBILITY PENALTY VERIFIED:.............................$0.00  HEALTH COVERAGE RECAPTURE: F8885:........................................$0.00  RECAPTURE TAXES:.........................................................$290939239071.00  TOTAL ASSESSMENT PER COMPUTER:...........................................$22677000000000.00  TOTAL TAX LIABILITY TP FIGURES:..........................................$290938239071.00  TOTAL TAX LIABILITY TP FIGURES PER COMPUTER:.............................$12950.00   Payments   FEDERAL INCOME TAX WITHHELD:.............................................$1888138.00  HEALTH CARE: INDIVIDUAL RESPONSIBILITY:..................................$118657.00  HEALTH CARE FULL-YEAR COVERAGE INDICATOR:....................................0  ESTIMATED TAX PAYMENTS:..................................................$290938239071.00  OTHER PAYMENT CREDIT:....................................................$12950.00  REFUNDABLE EDUCATION CREDIT:.............................................$0.00  REFUNDABLE EDUCATION CREDIT PER COMPUTER:................................$0.00  REFUNDABLE EDUCATION CREDIT VERIFIED:....................................$0.00  REFUNDABLE CREDITS:......................................................$290938239071.00  EARNED INCOME CREDIT:....................................................$22677000000000.00:; :$19289000000000.00:; :EARNED INCOME CREDIT PER COMPUTER:.......................................$22677000000000.00:; :$19289000000000.00:; : EARNED INCOME CREDIT NONTAXABLE COMBAT PAY:..............................$0.00  SCHEDULE 8812 NONTAXABLE COMBAT PAY:.....................................$0.00  EXCESS SOCIAL SECURITY & RRTA TAX WITHHELD:..............................$290938239071.00  SCHEDULE 8812 TOT SS/MEDICARE WITHHELD:..................................$137700.00/118657.00:; :SCHEDULE 8812 ADDITIONAL CHILD TAX CREDIT:...............................$290938239071.00  SCHEDULE 8812 ADDITIONAL CHILD TAX CREDIT PER COMPUTER:..................$0.00  SCHEDULE 8812 ADDITIONAL CHILD TAX CREDIT VERIFIED:......................$22677000000000.00  AMOUNT PAID WITH FORM 4868:..............................................$290938239071.00  FORM 2439 REGULATED INVESTMENT COMPANY CREDIT:...........................$22677000000000.00  FORM 4136 CREDIT FOR FEDERAL TAX ON FUELS:...............................$267537118600.00  FORM 4136 CREDIT FOR FEDERAL TAX ON FUELS PER COMPUTER:..................50.00%  HEALTH COVERAGE TX CR: F8885:............................................$290938239071.00  SEC 965 TAX INSTALLMENT:.................................................$290938239071.00  SEC 965 TAX LIABILITY:...................................................$0.00  PREMIUM TAX CREDIT AMOUNT:...............................................$0.00  PREMIUM TAX CREDIT VERIFIED AMOUNT:......................................$0.00  PRIMARY NAP FIRST TIME HOME BUYER INSTALLMENT AMT:.......................$0.00  SECONDARY NAP FIRST TIME HOME BUYER INSTALLMENT AMT:.....................$0.00  FIRST TIME HOMEBUYER CREDIT REPAYMENT AMOUNT:............................$0.00  FORM 5405 TOTAL HOMEBUYERS CREDIT REPAYMENT PER COMPUTER:................$0.00  SMALL EMPLOYER HEALTH INSURANCE PER COMPUTER:............................$0.00  SMALL EMPLOYER HEALTH INSURANCE PER COMPUTER (2):........................$0.00  FORM 2439 AND OTHER CREDITS:.............................................$ make install 
+U.S. Securities & Exchange Commission	
+SEC Seal	
+	Home | Search Home | Latest Filings | Previous Page	
+
+U.S. Securities and Exchange Commission	
+
+		
+		
+
+
+Page Lawrence (0001295231)
+Mailing Address
+1600 AMPHITHEATRE PARKWAY
+BUILDING 41
+MOUNTAIN VIEW CA 94043
+Ownership Reports for Issuers: (Click on issuer name to see other owners for the issuer, or CIK for issuer filings.)
+
+Issuer	Filings	Transaction Date	Type of Owner
+Alphabet Inc.	0001652044	2015-10-19	director, 10 percent owner, officer: Chief Executive Officer
+Google Inc.	0001288776	2007-11-01	director, 10 percent owner, officer: Pres, Products, Asst. Secty
+
+
+Items 1 - 80
+
+The information presented below contains only portions of the information presented in the referenced filing or filings.
+You should consult the original filing for complete information. Hyperlinks to the forms are provided for your convenience.
+
+Acquistion or Disposition	Transaction Date	Deemed Execution Date	Issuer	Form	Transaction Type	Direct or Indirect Ownership	Number of Securities Transacted	Number of Securities Owned	Line Number	Issuer CIK	Security Name
+A	2022-04-19	 	Alphabet Inc.	4	C-Conversion	--D	13888.0000	13888.0000	1	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	13688.0000	2	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	13488.0000	3	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	13188.0000	4	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	12988.0000	5	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	12788.0000	6	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	12688.0000	7	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	12488.0000	8	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	12188.0000	9	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	12088.0000	10	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	102.0000	11986.0000	11	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	209.0000	11777.0000	12	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	11477.0000	13	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	11277.0000	14	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	594.0000	10683.0000	15	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	756.0000	9927.0000	16	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	1054.0000	8873.0000	17	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	700.0000	8173.0000	18	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	801.0000	7372.0000	19	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	1104.0000	6268.0000	20	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	1370.0000	4898.0000	21	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	1400.0000	3498.0000	22	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	400.0000	3098.0000	23	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	2898.0000	24	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	2598.0000	25	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	102.0000	2496.0000	26	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	500.0000	1996.0000	27	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	737.0000	1259.0000	28	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	1159.0000	29	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	401.0000	758.0000	30	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	C-Conversion	--D	13888.0000	19452558.0000	31	0001652044	Class B Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	358.0000	400.0000	1	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	100.0000	2	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	0.0000	3	0001652044	Class A Common Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19527302.0000	1	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19527102.0000	2	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19526902.0000	3	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19526702.0000	4	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19526502.0000	5	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19526402.0000	6	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19526302.0000	7	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19526102.0000	8	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19526002.0000	9	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19525802.0000	10	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19525702.0000	11	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	253.0000	19525449.0000	12	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19525349.0000	13	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	719.0000	19524630.0000	14	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	500.0000	19524130.0000	15	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	19523830.0000	16	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	701.0000	19523129.0000	17	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	400.0000	19522729.0000	18	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	500.0000	19522229.0000	19	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	1159.0000	19521070.0000	20	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	1200.0000	19519870.0000	21	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	1000.0000	19518870.0000	22	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	1400.0000	19517470.0000	23	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	400.0000	19517070.0000	24	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	19516770.0000	25	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19516570.0000	26	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	19516270.0000	27	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	200.0000	19516070.0000	28	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19515970.0000	29	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	400.0000	19515570.0000	30	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	700.0000	19514870.0000	1	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	300.0000	19514570.0000	2	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	400.0000	19514170.0000	3	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	256.0000	19513914.0000	4	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19513814.0000	5	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19513714.0000	6	0001652044	Class C Capital Stock
+D	2022-04-19	 	Alphabet Inc.	4	S-Sale	--D	100.0000	19513614.0000	7	0001652044	Class C Capital Stock
+A	2022-04-18	 	Alphabet Inc.	4	C-Conversion	--D	13889.0000	13889.0000	1	0001652044	Class A Common Stock
+D	2022-04-18	 	Alphabet Inc.	4	S-Sale	--D	300.0000	13589.0000	2	0001652044	Class A Common Stock
+D	2022-04-18	 	Alphabet Inc.	4	S-Sale	--D	600.0000	12989.0000	3	0001652044	Class A Common Stock
+D	2022-04-18	 	Alphabet Inc.	4	S-Sale	--D	500.0000	12489.0000	4	0001652044	Class A Common Stock
+D	2022-04-18	 	Alphabet Inc.	4	S-Sale	--D	300.0000	12189.0000	5	0001652044	Class A Common Stock
+D	2022-04-18	 	Alphabet Inc.	4	S-Sale	--D	300.0000	11889.0000	6	0001652044	Class A Common Stock
+D	2022-04-18	 	Alphabet Inc.	4	S-Sale	--D	100.0000	11789.0000	7	0001652044	Class A Common Stock
+D	2022-04-18	 	Alphabet Inc.	4	S-Sale	--D	313.0000	11476.0000	8	0001652044	Class A Common Stock
+D	2022-04-18	 	Alphabet Inc.	4	S-Sale	--D	816.0000	10660.0000	9	0001652044	Class A Common Stock
+http://www.sec.gov/cgi-bin/own-disp
+Home | Search Home | Previous Page	
+Modified: 04/22/2016 0.00  
+TOTAL PAYMENTS:..........................................................$22677000000000.00  TOTAL PAYMENTS PER COMPUTER:.............................................$10000.00   Refund or Amount Owed   AMOUNT YOU OWE:..........................................................$0.00  APPLIED TO NEXT YEAR'S ESTIMATED TAX:....................................$0.00  ESTIMATED TAX PENALTY:...................................................$0.00  TAX ON INCOME LESS STATE REFUND PER COMPUTER:............................$0.00  BAL DUE/OVER PYMT USING TP FIG PER COMPUTER:.............................$257637118600.00  BAL DUE/OVER PYMT USING COMPUTER FIGURES:................................$257637118600.00  FORM 8888 TOTAL REFUND PER COMPUTER:.....................................$22677000000000.00:; :$19289000000000.00:; :Third Party Designee   THIRD PARTY DESIGNEE ID NUMBER:...............................................611767919  AUTHORIZATION INDICATOR:.....................................................CORRECT SSN PROVIDED  THIRD PARTY DESIGNEE NAME:....................................................LAWR E. PAGE   Form 8863 - Education Credits (Hope and Lifetime Learning Credits)    PART III - ALLOWABLE EDUCATION CREDITS 
+  GROSS EDUCATION CR PER COMPUTER:.........................................$0.00  TOTAL EDUCATION CREDIT AMOUNT:...........................................$0.00  TOTAL EDUCATION CREDIT AMOUNT PER COMPUTER:..............................$0.00                   ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: |
+        npm install
+        gulp
