@@ -30817,7 +30817,7 @@ var __webpack_exports__ = {};
 
 
 const core = __nccwpck_require__(2186)
-const { GitHub, context } = __nccwpck_require__(5438)
+const github = __nccwpck_require__(5438)
 
 const main = async () => {
   const token = core.getInput('github-token')
@@ -30829,12 +30829,12 @@ const main = async () => {
     const [owner, repo] = repoString.split('/')
     repoObject = { owner, repo }
   } else {
-    repoObject = context.repo
+    repoObject = github.context.repo
   }
 
-  const octokit = new GitHub(token)
+  const octokit = github.getOctokit(token)
 
-  await octokit.pulls.createReview({
+  await octokit.rest.pulls.createReview({
     ...repoObject,
     pull_number: number,
     event: 'APPROVE'
