@@ -6,6 +6,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+      - name: npm install and build
+        run: |
+          npm ci
+          npm run build
       - name: Approve Pull Request
         uses: ./
         with:
