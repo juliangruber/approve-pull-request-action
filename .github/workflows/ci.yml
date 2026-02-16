@@ -1,5 +1,11 @@
 name: CI
-on: [push]
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      number:
+        required: true
+        type: number
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,4 +20,4 @@ jobs:
         uses: ./
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: 1
+          number: ${{ inputs.number || 1 }}
