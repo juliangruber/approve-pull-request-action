@@ -1,10 +1,23 @@
 name: CI
-on: [push]
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      number:
+        required: true
+        type: number
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: juliangruber/approve-pull-request-action@master
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: npm install and build
+        run: |
+          npm ci
+          npm run build
+      - name: Approve Pull Request
+        uses: ./
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: 1
+          number: ${{ inputs.number || 1 }}
