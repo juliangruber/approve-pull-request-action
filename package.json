@@ -24,5 +24,19 @@
     "np": "^9.2.0",
     "prettier-standard": "^15.0.1",
     "standard": "^17.1.0"
+  },
+  "overrides": {
+    "@actions/core": {
+      "undici": "8.9.0"
+    },
+    "@actions/github": {
+      "undici": "8.9.0"
+    },
+    "@actions/http-client": {
+      "undici": "8.9.0"
+    },
+    "undici": {
+      "undici": "8.9.0"
+    }
   }
 }
