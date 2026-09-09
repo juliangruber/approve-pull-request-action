@@ -26,17 +26,6 @@
     "standard": "^17.1.0"
   },
   "overrides": {
-    "@actions/core": {
-      "undici": "8.9.0"
-    },
-    "@actions/github": {
-      "undici": "8.9.0"
-    },
-    "@actions/http-client": {
-      "undici": "8.9.0"
-    },
-    "undici": {
-      "undici": "8.9.0"
-    }
+    "undici": "^6.28.1"
   }
 }
