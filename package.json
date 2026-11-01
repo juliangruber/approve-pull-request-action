@@ -26,6 +26,6 @@
     "standard": "^17.1.0"
   },
   "overrides": {
-    "undici": "^6.28.1"
+    "undici": "^6.29.1"
   }
 }
